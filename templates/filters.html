@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Text Box Example</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        .container .box {
+            flex: 1 0 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .box label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .container .box input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+        }
+
+        .container .box input[type="text"][name^="Not_"] {
+            background-color: #969696;
+            white-space: pre-wrap;
+
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            /* display: flex; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: relative; */
+        }
+
+        .navbar-center a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar-center a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .box {
+            padding: 10px;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        .box:hover,
+        .box:focus {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .box input[type="text"] {
+            height: 30px;
+            /* set initial height */
+            transition: height 0.2s;
+            /* add transition effect */
+
+        }
+
+        .box input[type="text"]:focus {
+            height: 100px;
+            /* set expanded height */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-center">
+            <a href="http://localhost:8000/"><b>Home</a>
+            <a href="http://localhost:8000/filters">Keywords</a>
+            <a href="http://localhost:8000/">Predict</b></a>
+        </div>
+    </nav>
+
+    <h1>
+        <center>Add comma separated values in below category text boxes</center>
+    </h1>
+    <form method="POST">
+        <div class="container">
+            <div class="box">
+                <label>Roofing Issues</label>
+                <input type="text" name="Roofing_Issues" value="{{ keywords['Roofing_Issues']|join(', ') }}"
+                    wrap="soft">
+                <input type="text" name="Not_Roofing_Issues" value="{{ keywords['Not_Roofing_Issues']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Water Leak in Utility Closet</label>
+                <input type="text" name="Plumbing_Water_Leak_in_Utility_Closet"
+                    value="{{ keywords['Plumbing:_Water_Leak_in_Utility_Closet']|join(', ') }}">
+                <input type="text" name="Not_Plumbing_Water_Leak_in_Utility_Closet"
+                    value="{{ keywords['Not_Plumbing:_Water_Leak_in_Utility_Closet']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Piping Sanitary Not Draining</label>
+                <input type="text" name="Piping:_Sanitary_Not_Draining"
+                    value="{{ keywords['Piping:_Sanitary_Not_Draining']|join(', ') }}">
+                <input type="text" name="Not_Piping:_Sanitary_Not_Draining"
+                    value="{{ keywords['Not_Piping:_Sanitary_Not_Draining']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Fixture Leaks</label>
+                <input type="text" name="Plumbing_Fixture_Leaks"
+                    value="{{ keywords['Plumbing_Fixture_Leaks']|join(', ') }}">
+                <input type="text" name="Not_Plumbing_Fixture_Leaks"
+                    value="{{ keywords['Not_Plumbing_Fixture_Leaks']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Piping Below Ground Sanitary</label>
+                <input type="text" name="Piping_Below_Ground_Sanitary"
+                    value="{{ keywords['Piping_Below_Ground_Sanitary']|join(', ') }}">
+                <input type="text" name="Not_Piping_Below_Ground_Sanitary"
+                    value="{{ keywords['Not_Piping_Below_Ground_Sanitary']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Toilet Not Flushing</label>
+                <input type="text" name="Toilet_not_flushing" value="{{ keywords['Toilet_not_flushing']|join(', ') }}">
+                <input type="text" name="Not_Toilet_not_flushing"
+                    value="{{ keywords['Not_Toilet_not_flushing']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Sewer Smell</label>
+                <input type="text" name="Plumbing:_Sewer_Smell"
+                    value="{{ keywords['Plumbing:_Sewer_Smell']|join(', ') }}">
+                <input type="text" name="Not_Plumbing:_Sewer_Smell"
+                    value="{{ keywords['Not_Plumbing:_Sewer_Smell']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Water Leaks Behind Sheetrock</label>
+                <input type="text" name="Plumbing:_Water_Leaks_Behind_Sheetrock"
+                    value="{{ keywords['Plumbing:_Water_Leaks_Behind_Sheetrock']|join(', ') }}">
+                <input type="text" name="Not_Plumbing:_Water_Leaks_Behind_Sheetrock"
+                    value="{{ keywords['Not_Plumbing:_Water_Leaks_Behind_Sheetrock']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Leaking Water Heaters</label>
+                <input type="text" name="Plumbing_Leaking_Water_Heaters"
+                    value="{{ keywords['Plumbing_Leaking_Water_Heaters']|join(', ') }}">
+                <input type="text" name="Not_Plumbing_Leaking_Water_Heaters"
+                    value="{{ keywords['Not_Plumbing_Leaking_Water_Heaters']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Plumbing Fixtures that are in Poor Condition</label>
+                <input type="text" name="Plumbing_Fixtures_that_are_in_poor_condition"
+                    value="{{ keywords['Plumbing_Fixtures_that_are_in_poor_condition']|join(', ') }}">
+                <input type="text" name="Not_Plumbing_Fixtures_that_are_in_poor_condition"
+                    value="{{ keywords['Not_Plumbing_Fixtures_that_are_in_poor_condition']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>No Hot Water</label>
+                <input type="text" name="No_hot_water" value="{{ keywords['No_hot_water']|join(', ') }}">
+                <input type="text" name="Not_No_hot_water" value="{{ keywords['Not_No_hot_water']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Low or No Water Pressure</label>
+                <input type="text" name="Low_or_no_water_pressure"
+                    value="{{ keywords['Low_or_no_water_pressure']|join(', ') }}">
+                <input type="text" name="Not_Low_or_no_water_pressure"
+                    value="{{ keywords['Not_Low_or_no_water_pressure']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Humidity Mold</label>
+                <input type="text" name="Humidity_mold" value="{{ keywords['Humidity_mold']|join(', ') }}">
+                <input type="text" name="Not_Humidity_mold" value="{{ keywords['Not_Humidity_mold']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Heating Not Working</label>
+                <input type="text" name="Heating_not_working" value="{{ keywords['Heating_not_working']|join(', ') }}">
+                <input type="text" name="Not_Heating_not_working"
+                    value="{{ keywords['Not_Heating_not_working']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>AC Not Working Properly</label>
+                <input type="text" name="AC_not_working_properly"
+                    value="{{ keywords['AC_not_working_properly']|join(', ') }}">
+                <input type="text" name="Not_AC_not_working_properly"
+                    value="{{ keywords['Not_AC_not_working_properly']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Thermostat Issues</label>
+                <input type="text" name="Thermostat_Issues" value="{{ keywords['Thermostat_Issues']|join(', ') }}">
+                <input type="text" name="Not_Thermostat_Issues"
+                    value="{{ keywords['Not_Thermostat_Issues']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Smell in HVAC</label>
+                <input type="text" name="Smell_in_HVAC" value="{{ keywords['Smell_in_HVAC']|join(', ') }}">
+                <input type="text" name="Not_Smell_in_HVAC" value="{{ keywords['Not_Smell_in_HVAC']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Miscellaneous HVAC</label>
+                <input type="text" name="Miscellaneous_HVAC" value="{{ keywords['Miscellaneous_HVAC']|join(', ') }}">
+                <input type="text" name="Not_Miscellaneous_HVAC"
+                    value="{{ keywords['Not_Miscellaneous_HVAC']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Fan Issues</label>
+                <input type="text" name="Fan_issues" value="{{ keywords['Fan_issues']|join(', ') }}">
+                <input type="text" name="Not_Fan_issues" value="{{ keywords['Not_Fan_issues']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>HVAC Drip or Leak</label>
+                <input type="text" name="HVAC_drip_or_leak" value="{{ keywords['HVAC_drip_or_leak']|join(', ') }}">
+                <input type="text" name="Not_HVAC_drip_or_leak"
+                    value="{{ keywords['Not_HVAC_drip_or_leak']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Unbalanced HVAC</label>
+                <input type="text" name="Unbalanced_HVAC" value="{{ keywords['Unbalanced_HVAC']|join(', ') }}">
+                <input type="text" name="Not_Unbalanced_HVAC" value="{{ keywords['Not_Unbalanced_HVAC']|join(', ') }}">
+            </div>
+
+            <div class="box">
+                <label>Inadequate HVAC Capacity</label>
+                <input type="text" name="Inadequate_HVAC_capacity"
+                    value="{{ keywords['Inadequate_HVAC_capacity']|join(', ') }}">
+                <input type="text" name="Not_Inadequate_HVAC_capacity"
+                    value="{{ keywords['Not_Inadequate_HVAC_capacity']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Electrical</label>
+                <input type="text" name="Electrical" value="{{ keywords['Electrical']|join(', ') }}">
+                <input type="text" name="Not_Electrical" value="{{ keywords['Not_Electrical']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Fire</label>
+                <input type="text" name="Fire" value="{{ keywords['Fire']|join(', ') }}">
+                <input type="text" name="Not_Fire" value="{{ keywords['Not_Fire']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Window Issues</label>
+                <input type="text" name="Window_issues" value="{{ keywords['Window_issues']|join(', ') }}">
+                <input type="text" name="Not_Window_issues" value="{{ keywords['Not_Window_issues']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Window Leak</label>
+                <input type="text" name="Window_Leak" value="{{ keywords['Window_Leak']|join(', ') }}">
+                <input type="text" name="Not_Window_Leak" value="{{ keywords['Not_Window_Leak']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Windows Fogged</label>
+                <input type="text" name="Windows_Fogged" value="{{ keywords['Windows_Fogged']|join(', ') }}">
+                <input type="text" name="Not_Windows_Fogged" value="{{ keywords['Not_Windows_Fogged']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Window Condensation</label>
+                <input type="text" name="Window_Condensation" value="{{ keywords['Window_Condensation']|join(', ') }}">
+                <input type="text" name="Not_Window_Condensation"
+                    value="{{ keywords['Not_Window_Condensation']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Washer Dryer Issues</label>
+                <input type="text" name="Washer_Dryer_Issues" value="{{ keywords['Washer_Dryer_Issues']|join(', ') }}">
+                <input type="text" name="Not_Washer_Dryer_Issues"
+                    value="{{ keywords['Not_Washer_Dryer_Issues']|join(', ') }}">
+            </div>
+            <div class="box">
+                <label>Dishwasher Issues</label>
+                <input type="text" name="Dishwasher_Issues" value="{{ keywords['Dishwasher_Issues']|join(', ') }}">
+                <input type="text" name="Not_Dishwasher_Issues"
+                    value="{{ keywords['Not_Dishwasher_Issues']|join(', ') }}">
+            </div>
+            <div class="box">
+                <input type="submit" value="Save">
+            </div>
+        </div>
+    </form>
+</body>
+
+<script>
+    // add event listener for input focus
+    var inputs = document.querySelectorAll('.box input[type="text"]');
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('focus', function () {
+            this.style.height = '100px'; // set expanded height
+        });
+        inputs[i].addEventListener('blur', function () {
+            this.style.height = '30px'; // set initial height
+        });
+    }
+</script>
+
+</html>

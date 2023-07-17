@@ -1,0 +1,4344 @@
+{
+    "Roofing_Issues": [
+        [
+            "roof",
+            "leak"
+        ],
+        [
+            "roof",
+            "water"
+        ],
+        [
+            "leak",
+            "rain"
+        ]
+    ],
+    "Not_Roofing_Issues": [
+        "sink",
+        "tub",
+        "window",
+        "washer",
+        "dryer"
+    ],
+    "Plumbing:_Water_Leak_in_Utility_Closet": [
+        [
+            "utility closet",
+            "leak"
+        ],
+        [
+            "utility closet",
+            "water"
+        ],
+        [
+            "utility closet",
+            "liquid"
+        ]
+    ],
+    "Not_Plumbing:_Water_Leak_in_Utility_Closet": [
+        "filter",
+        "water heater",
+        "temperature",
+        "do not have hot water",
+        "temp",
+        "no hotwater",
+        "A/C not working",
+        "sprinkler",
+        [
+            "leak"
+        ],
+        [
+            "vent",
+            "leak"
+        ]
+    ],
+    "Piping:_Sanitary_Not_Draining": [
+        "shower is leaking",
+        "leak in bathroom",
+        "bathroom leak",
+        "leak in kitchen",
+        "snk lek",
+        "bathroom tub leak",
+        "gst bthrm tub is drppn",
+        "sink lkg",
+        "There is a flood",
+        "leaking around flush handle",
+        "water is running from the back",
+        "leaking when flushed",
+        "shower leak",
+        [
+            "drain",
+            "leak"
+        ],
+        [
+            "drain",
+            "drip"
+        ],
+        [
+            "drain",
+            "under"
+        ],
+        [
+            "drain",
+            "water below"
+        ],
+        [
+            "drain",
+            "below"
+        ],
+        [
+            "faucet",
+            "leak"
+        ],
+        [
+            "faucet",
+            "drip"
+        ],
+        [
+            "faucet",
+            "under"
+        ],
+        [
+            "faucet",
+            "water below"
+        ],
+        [
+            "faucet",
+            "below"
+        ],
+        [
+            "sink",
+            "leak"
+        ],
+        [
+            "sink",
+            "drip"
+        ],
+        [
+            "sink",
+            "under"
+        ],
+        [
+            "sink",
+            "water below"
+        ],
+        [
+            "sink",
+            "below"
+        ],
+        [
+            "toilet",
+            "leak"
+        ],
+        [
+            "toilet",
+            "drip"
+        ],
+        [
+            "toilet",
+            "under"
+        ],
+        [
+            "toilet",
+            "water below"
+        ],
+        [
+            "toilet",
+            "below"
+        ],
+        [
+            "leak",
+            "sink"
+        ],
+        [
+            "leak",
+            "tub"
+        ],
+        [
+            "leak",
+            "toilet"
+        ],
+        [
+            "sink",
+            "lkg"
+        ],
+        [
+            "tub",
+            "lkg"
+        ],
+        [
+            "toilet",
+            "lkg"
+        ],
+        [
+            "faucet",
+            "lkg"
+        ],
+        [
+            "drain",
+            "lkg"
+        ],
+        [
+            "kitchen",
+            "water leak"
+        ],
+        [
+            "leak",
+            "kitchen"
+        ],
+        [
+            "washroom",
+            "water on the floor"
+        ],
+        [
+            "toilet seat",
+            "loose"
+        ],
+        [
+            "leak",
+            "kitchen"
+        ],
+        [
+            "Water leak",
+            "stall"
+        ],
+        [
+            "urinal",
+            "leak"
+        ],
+        [
+            "Sink",
+            "water sprays"
+        ],
+        [
+            "leak",
+            "flush handle"
+        ],
+        [
+            "leak",
+            "water"
+        ],
+        [
+            "leaked from pipe",
+            "spray"
+        ]
+    ],
+    "Not_Piping:_Sanitary_Not_Draining": [
+        "condens",
+        "extinguisher",
+        "vent",
+        "Sink is not draining",
+        "hood fan",
+        "keeps running",
+        "not flushing properly",
+        "no leak or clog",
+        "clog",
+        "stuck on flush mode",
+        "unclog",
+        "doesn't flush",
+        "water heater",
+        "not drain",
+        "overflow",
+        "flushing non stop",
+        "not stop flushing",
+        "flush doesn't stop",
+        "constantly flushing",
+        "keeps flushing",
+        "continues the flush",
+        "continuously running",
+        "in the corridor",
+        "massage area",
+        "didn't stop running",
+        "please replace filter",
+        "urinal is not working properly",
+        "faucets spray water",
+        "a/c",
+        "elevator bay",
+        "Please fix the hot water faucet",
+        "turn off the boiler/coffee machine water supply",
+        "reception room",
+        "sewer smell",
+        "mechanical drain plugs built into",
+        "water pressure is very high",
+        "water filter",
+        "no water coming",
+        "wobbly",
+        "running continuously",
+        "Please service a toilet",
+        "ice maker",
+        "ice machine",
+        "water tap does not always turn on",
+        "will not stop running",
+        "newly installed filter",
+        "paint has bubbled up",
+        "dish machine",
+        "dishwasher",
+        "no hot water",
+        "toilet seat",
+        "sprinkler",
+        "dripping from the lower concourse",
+        "toilet in the gym is running",
+        "has been running",
+        "DW",
+        "washer",
+        "dishwasher",
+        "dryer",
+        "window",
+        "air con",
+        "A/C",
+        "washing machine",
+        [
+            "sensor",
+            "toilet"
+        ],
+        [
+            "no hot water",
+            "sink"
+        ],
+        [
+            "dispens",
+            "water"
+        ],
+        [
+            "sink",
+            "has low water pressure"
+        ],
+        [
+            "leak",
+            "ceiling"
+        ],
+        [
+            "drain",
+            "backing up"
+        ],
+        [
+            "drain",
+            "backs up"
+        ],
+        [
+            "drain",
+            "back up"
+        ],
+        [
+            "box under the sink",
+            "sound"
+        ],
+        [
+            "water flow is very weak",
+            "toilet"
+        ],
+        [
+            "No water",
+            "kitchen"
+        ],
+        [
+            "drain",
+            "slow"
+        ],
+        [
+            "toilet",
+            "continuously flushing"
+        ],
+        [
+            "toilet",
+            "continually flushing"
+        ],
+        [
+            "toilet",
+            "flushes continually"
+        ],
+        [
+            "toilet",
+            "flushing continually"
+        ],
+        [
+            "urinal",
+            "continuously flushing"
+        ],
+        [
+            "urinal",
+            "continually flushing"
+        ],
+        [
+            "urinal",
+            "flushes continually"
+        ],
+        [
+            "urinal",
+            "flushing continually"
+        ],
+        [
+            "filter",
+            "please replace"
+        ],
+        [
+            "ensure",
+            "nothing currently leaking"
+        ],
+        [
+            "fire",
+            "pump"
+        ],
+        [
+            "water",
+            "inside the wall"
+        ],
+        [
+            "toilet",
+            "will not flush"
+        ],
+        [
+            "faucet",
+            "water sprays"
+        ],
+        [
+            "please change",
+            "filter"
+        ],
+        [
+            "water pressure",
+            "is too high"
+        ],
+        [
+            "water pressure",
+            "low"
+        ],
+        [
+            "usual",
+            "snaking"
+        ],
+        [
+            "have",
+            "filters replaced"
+        ],
+        [
+            "have",
+            "filter replaced"
+        ],
+        [
+            "water",
+            "spray"
+        ],
+        [
+            "toilet",
+            "is not flushing"
+        ],
+        [
+            "water filter",
+            "change"
+        ],
+        [
+            "check",
+            "water filter"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "water",
+            "in the filter"
+        ],
+        [
+            "no",
+            "water running"
+        ],
+        [
+            "flush",
+            "doesn't work"
+        ],
+        [
+            "handle",
+            "loose"
+        ],
+        [
+            "handle",
+            "wobbly"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "faucet",
+            "wobbly"
+        ],
+        [
+            "spout",
+            "detach"
+        ],
+        [
+            "office",
+            "water on the floor"
+        ],
+        [
+            "water pump",
+            "noise"
+        ],
+        [
+            "water",
+            "trickling very slowly"
+        ],
+        [
+            "water",
+            "seems to be very slow"
+        ],
+        [
+            "sensor",
+            "tap"
+        ],
+        [
+            "sensor",
+            "urinal"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "sewage",
+            "odor"
+        ],
+        [
+            "filtered water",
+            "look"
+        ],
+        [
+            "water fountain",
+            "not working"
+        ],
+        [
+            "temperature",
+            "water"
+        ],
+        [
+            "water fountain",
+            "running very slow"
+        ],
+        [
+            "water",
+            "running constantly"
+        ],
+        [
+            "flush",
+            "properly"
+        ],
+        [
+            "handle",
+            "unscrew"
+        ],
+        [
+            "faucet",
+            "unscrew"
+        ],
+        [
+            "sink",
+            "unscrew"
+        ],
+        [
+            "handle",
+            "tighten"
+        ],
+        [
+            "faucet",
+            "tighten"
+        ],
+        [
+            "sink",
+            "tighten"
+        ],
+        [
+            "filter",
+            "change"
+        ],
+        [
+            "filter",
+            "replace"
+        ],
+        [
+            "flush",
+            "water comes up"
+        ],
+        [
+            "filter water",
+            "very warm"
+        ],
+        [
+            "leak",
+            "from above"
+        ],
+        [
+            "fan",
+            "leak"
+        ],
+        [
+            "hvac",
+            "leak"
+        ],
+        [
+            "vent",
+            "leak"
+        ],
+        [
+            "toilet",
+            "running water issue"
+        ]
+    ],
+    "Plumbing_Fixture_Leaks": [
+        "shower is leaking",
+        "leak in bathroom",
+        "bathroom leak",
+        "leak in kitchen",
+        "snk lek",
+        "bathroom tub leak",
+        "gst bthrm tub is drppn",
+        "sink lkg",
+        "There is a flood",
+        "leaking around flush handle",
+        "water is running from the back",
+        "leaking when flushed",
+        "shower leak",
+        [
+            "drain",
+            "leak"
+        ],
+        [
+            "drain",
+            "drip"
+        ],
+        [
+            "drain",
+            "under"
+        ],
+        [
+            "drain",
+            "water below"
+        ],
+        [
+            "drain",
+            "below"
+        ],
+        [
+            "faucet",
+            "leak"
+        ],
+        [
+            "faucet",
+            "drip"
+        ],
+        [
+            "faucet",
+            "under"
+        ],
+        [
+            "faucet",
+            "water below"
+        ],
+        [
+            "faucet",
+            "below"
+        ],
+        [
+            "sink",
+            "leak"
+        ],
+        [
+            "sink",
+            "drip"
+        ],
+        [
+            "sink",
+            "under"
+        ],
+        [
+            "sink",
+            "water below"
+        ],
+        [
+            "sink",
+            "below"
+        ],
+        [
+            "toilet",
+            "leak"
+        ],
+        [
+            "toilet",
+            "drip"
+        ],
+        [
+            "toilet",
+            "under"
+        ],
+        [
+            "toilet",
+            "water below"
+        ],
+        [
+            "toilet",
+            "below"
+        ],
+        [
+            "leak",
+            "sink"
+        ],
+        [
+            "leak",
+            "tub"
+        ],
+        [
+            "leak",
+            "toilet"
+        ],
+        [
+            "sink",
+            "lkg"
+        ],
+        [
+            "tub",
+            "lkg"
+        ],
+        [
+            "toilet",
+            "lkg"
+        ],
+        [
+            "faucet",
+            "lkg"
+        ],
+        [
+            "drain",
+            "lkg"
+        ],
+        [
+            "kitchen",
+            "water leak"
+        ],
+        [
+            "leak",
+            "kitchen"
+        ],
+        [
+            "washroom",
+            "water on the floor"
+        ],
+        [
+            "toilet seat",
+            "loose"
+        ],
+        [
+            "leak",
+            "kitchen"
+        ],
+        [
+            "Water leak",
+            "stall"
+        ],
+        [
+            "urinal",
+            "leak"
+        ],
+        [
+            "Sink",
+            "water sprays"
+        ],
+        [
+            "leak",
+            "flush handle"
+        ],
+        [
+            "leak",
+            "water"
+        ],
+        [
+            "leaked from pipe",
+            "spray"
+        ]
+    ],
+    "Not_Plumbing_Fixture_Leaks": [
+        "condens",
+        "extinguisher",
+        "vent",
+        "Sink is not draining",
+        "hood fan",
+        "keeps running",
+        "not flushing properly",
+        "no leak or clog",
+        "clog",
+        "stuck on flush mode",
+        "unclog",
+        "doesn't flush",
+        "water heater",
+        "not drain",
+        "overflow",
+        "flushing non stop",
+        "not stop flushing",
+        "flush doesn't stop",
+        "constantly flushing",
+        "keeps flushing",
+        "continues the flush",
+        "continuously running",
+        "in the corridor",
+        "massage area",
+        "didn't stop running",
+        "please replace filter",
+        "urinal is not working properly",
+        "faucets spray water",
+        "a/c",
+        "elevator bay",
+        "Please fix the hot water faucet",
+        "turn off the boiler/coffee machine water supply",
+        "reception room",
+        "sewer smell",
+        "mechanical drain plugs built into",
+        "water pressure is very high",
+        "water filter",
+        "no water coming",
+        "wobbly",
+        "running continuously",
+        "Please service a toilet",
+        "ice maker",
+        "ice machine",
+        "water tap does not always turn on",
+        "will not stop running",
+        "newly installed filter",
+        "paint has bubbled up",
+        "dish machine",
+        "dishwasher",
+        "no hot water",
+        "toilet seat",
+        "sprinkler",
+        "dripping from the lower concourse",
+        "toilet in the gym is running",
+        "has been running",
+        "DW",
+        "washer",
+        "dishwasher",
+        "dryer",
+        "window",
+        "air con",
+        "A/C",
+        "washing machine",
+        [
+            "sensor",
+            "toilet"
+        ],
+        [
+            "no hot water",
+            "sink"
+        ],
+        [
+            "dispens",
+            "water"
+        ],
+        [
+            "sink",
+            "has low water pressure"
+        ],
+        [
+            "leak",
+            "ceiling"
+        ],
+        [
+            "drain",
+            "backing up"
+        ],
+        [
+            "drain",
+            "backs up"
+        ],
+        [
+            "drain",
+            "back up"
+        ],
+        [
+            "box under the sink",
+            "sound"
+        ],
+        [
+            "water flow is very weak",
+            "toilet"
+        ],
+        [
+            "No water",
+            "kitchen"
+        ],
+        [
+            "drain",
+            "slow"
+        ],
+        [
+            "toilet",
+            "continuously flushing"
+        ],
+        [
+            "toilet",
+            "continually flushing"
+        ],
+        [
+            "toilet",
+            "flushes continually"
+        ],
+        [
+            "toilet",
+            "flushing continually"
+        ],
+        [
+            "urinal",
+            "continuously flushing"
+        ],
+        [
+            "urinal",
+            "continually flushing"
+        ],
+        [
+            "urinal",
+            "flushes continually"
+        ],
+        [
+            "urinal",
+            "flushing continually"
+        ],
+        [
+            "filter",
+            "please replace"
+        ],
+        [
+            "ensure",
+            "nothing currently leaking"
+        ],
+        [
+            "fire",
+            "pump"
+        ],
+        [
+            "water",
+            "inside the wall"
+        ],
+        [
+            "toilet",
+            "will not flush"
+        ],
+        [
+            "faucet",
+            "water sprays"
+        ],
+        [
+            "please change",
+            "filter"
+        ],
+        [
+            "water pressure",
+            "is too high"
+        ],
+        [
+            "water pressure",
+            "low"
+        ],
+        [
+            "usual",
+            "snaking"
+        ],
+        [
+            "have",
+            "filters replaced"
+        ],
+        [
+            "have",
+            "filter replaced"
+        ],
+        [
+            "water",
+            "spray"
+        ],
+        [
+            "toilet",
+            "is not flushing"
+        ],
+        [
+            "water filter",
+            "change"
+        ],
+        [
+            "check",
+            "water filter"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "water",
+            "in the filter"
+        ],
+        [
+            "no",
+            "water running"
+        ],
+        [
+            "flush",
+            "doesn't work"
+        ],
+        [
+            "handle",
+            "loose"
+        ],
+        [
+            "handle",
+            "wobbly"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "faucet",
+            "wobbly"
+        ],
+        [
+            "spout",
+            "detach"
+        ],
+        [
+            "office",
+            "water on the floor"
+        ],
+        [
+            "water pump",
+            "noise"
+        ],
+        [
+            "water",
+            "trickling very slowly"
+        ],
+        [
+            "water",
+            "seems to be very slow"
+        ],
+        [
+            "sensor",
+            "tap"
+        ],
+        [
+            "sensor",
+            "urinal"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "sewage",
+            "odor"
+        ],
+        [
+            "filtered water",
+            "look"
+        ],
+        [
+            "water fountain",
+            "not working"
+        ],
+        [
+            "temperature",
+            "water"
+        ],
+        [
+            "water fountain",
+            "running very slow"
+        ],
+        [
+            "water",
+            "running constantly"
+        ],
+        [
+            "flush",
+            "properly"
+        ],
+        [
+            "handle",
+            "unscrew"
+        ],
+        [
+            "faucet",
+            "unscrew"
+        ],
+        [
+            "sink",
+            "unscrew"
+        ],
+        [
+            "handle",
+            "tighten"
+        ],
+        [
+            "faucet",
+            "tighten"
+        ],
+        [
+            "sink",
+            "tighten"
+        ],
+        [
+            "filter",
+            "change"
+        ],
+        [
+            "filter",
+            "replace"
+        ],
+        [
+            "flush",
+            "water comes up"
+        ],
+        [
+            "filter water",
+            "very warm"
+        ],
+        [
+            "leak",
+            "from above"
+        ],
+        [
+            "fan",
+            "leak"
+        ],
+        [
+            "hvac",
+            "leak"
+        ],
+        [
+            "vent",
+            "leak"
+        ],
+        [
+            "toilet",
+            "running water issue"
+        ]
+    ],
+    "Piping_Below_Ground_Sanitary": [
+        ""
+    ],
+    "Not_Piping_Below_Ground_Sanitary": [
+        ""
+    ],
+    "Toilet_not_flushing": [
+        "Toilet runs continually",
+        "toilet keeps running",
+        "gst bthrm tolt kps run",
+        "Toilet won't stop running",
+        "toilet won t flush",
+        "flushing system",
+        "toilet doesn't not flush",
+        "runs continually",
+        "toilet won't flush",
+        "Toilet doesn't flush",
+        [
+            "Toilet",
+            "not fill"
+        ],
+        [
+            "flush",
+            "low"
+        ],
+        [
+            "flush",
+            "more than one"
+        ],
+        [
+            "weak",
+            "flush"
+        ],
+        [
+            "flush",
+            "2 or 3"
+        ],
+        [
+            "bowl",
+            "long time"
+        ],
+        [
+            "bowl",
+            "filling very slow"
+        ],
+        [
+            "bowl",
+            "filling slow"
+        ],
+        [
+            "flush",
+            "slow"
+        ],
+        [
+            "toilet",
+            "pressure not strong"
+        ],
+        [
+            "flush",
+            "multiple"
+        ],
+        [
+            "toilet",
+            "pressure is very low"
+        ],
+        [
+            "flush",
+            "tank"
+        ],
+        [
+            "flush",
+            "more than"
+        ],
+        [
+            "flush",
+            "pressed continuously"
+        ],
+        [
+            "toilet",
+            "does not flush"
+        ],
+        [
+            "toilet",
+            "not flushing"
+        ],
+        [
+            "urinal",
+            "does not flush"
+        ],
+        [
+            "urinal",
+            "not flush"
+        ],
+        [
+            "toilet",
+            "will not flush"
+        ],
+        [
+            "urinal",
+            "not draining quickly"
+        ],
+        [
+            "stall",
+            "isn't flushing properly"
+        ],
+        [
+            "toilet",
+            "will not flush"
+        ],
+        [
+            "toilet flush",
+            "issue"
+        ]
+    ],
+    "Not_Toilet_not_flushing": [
+        "water leak",
+        "overflow",
+        "continuously",
+        "continually",
+        [
+            "water leak",
+            "joint"
+        ],
+        [
+            "toilet",
+            "continuously flushing"
+        ],
+        [
+            "toilet",
+            "continually flushing"
+        ],
+        [
+            "toilet",
+            "flushes continually"
+        ],
+        [
+            "toilet",
+            "flushing continually"
+        ],
+        [
+            "urinal",
+            "continuously flushing"
+        ],
+        [
+            "urinal",
+            "continually flushing"
+        ],
+        [
+            "urinal",
+            "flushes continually"
+        ],
+        [
+            "urinal",
+            "flushing continually"
+        ],
+        [
+            "broke",
+            "chain"
+        ],
+        [
+            "broke",
+            "hand"
+        ],
+        [
+            "constantly",
+            "run"
+        ]
+    ],
+    "Plumbing:_Sewer_Smell": [
+        "smell",
+        [
+            "smell",
+            "washroom"
+        ],
+        [
+            "sewage",
+            "odor"
+        ]
+    ],
+    "Not_Plumbing:_Sewer_Smell": [
+        "no water coming",
+        "dish",
+        "washer",
+        "dryer",
+        "drier",
+        "A/C",
+        "AC unit",
+        "smell of paint",
+        [
+            "gas",
+            "smell"
+        ],
+        [
+            "burnt",
+            "smell"
+        ],
+        [
+            "hvac",
+            "smell"
+        ],
+        [
+            "air condition",
+            "smell"
+        ],
+        [
+            "flash",
+            "smell"
+        ],
+        [
+            "electrical",
+            "smell"
+        ],
+        [
+            "bulb",
+            "smell"
+        ],
+        [
+            "light",
+            "smell"
+        ],
+        [
+            "AC",
+            "smell"
+        ],
+        [
+            "hvac",
+            "smell"
+        ],
+        [
+            "fan",
+            "smell"
+        ]
+    ],
+    "Plumbing:_Water_Leaks_Behind_Sheetrock": [
+        "leak in bulk head",
+        "flooding",
+        "floor wet",
+        "floor being wet",
+        "water leaking",
+        "carpet soaking",
+        "soaking",
+        "water damage",
+        "water coming from",
+        "water is coming from",
+        "water pipe break",
+        "water pipe leak",
+        "piping break",
+        "pipe leak",
+        "leaking water",
+        "leak in apartment",
+        "flooded",
+        "water is leaking",
+        "water is spreading",
+        "water spreads",
+        "water spreading",
+        "leak coming from above",
+        "possible leakage",
+        "water leak",
+        "pouring out water",
+        "drains on floor",
+        "leak somewhere",
+        "standing water",
+        "water coming out of floor",
+        "Ceiling tile damaged",
+        "leak in bulk head",
+        "leaking ceiling",
+        "celn lekn",
+        "celn is lekn",
+        "Water on floor",
+        "Leak in Living Room",
+        "Leaks:",
+        "paint has bubbled up",
+        "dripping from the lower concourse",
+        "water from ceiling",
+        [
+            "ceiling",
+            "leak"
+        ],
+        [
+            "clg",
+            "leak"
+        ],
+        [
+            "celn",
+            "leak"
+        ],
+        [
+            "on wall",
+            "leak"
+        ],
+        [
+            "on the wall",
+            "leak"
+        ],
+        [
+            "clg",
+            "leak"
+        ],
+        [
+            "in the hallway",
+            "leak"
+        ],
+        [
+            "ceiling",
+            "lek"
+        ],
+        [
+            "clg",
+            "lek"
+        ],
+        [
+            "celn",
+            "lek"
+        ],
+        [
+            "on wall",
+            "lek"
+        ],
+        [
+            "on the wall",
+            "lek"
+        ],
+        [
+            "clg",
+            "lek"
+        ],
+        [
+            "in the hallway",
+            "lek"
+        ],
+        [
+            "leak",
+            "ceiling"
+        ],
+        [
+            "water",
+            "inside the wall"
+        ],
+        [
+            "elevator bay",
+            "leak"
+        ],
+        [
+            "oasis",
+            "leak"
+        ],
+        [
+            "leak",
+            "reception"
+        ],
+        [
+            "office",
+            "water on the floor"
+        ],
+        [
+            "leak",
+            "from above"
+        ],
+        [
+            "leak",
+            "from upstairs"
+        ],
+        [
+            "ceiling",
+            "drip"
+        ],
+        [
+            "ceiling tile",
+            "water"
+        ],
+        [
+            "ceiling tile",
+            "flood"
+        ]
+    ],
+    "Not_Plumbing:_Water_Leaks_Behind_Sheetrock": [
+        "dishwasher",
+        "Wall/ceiling damaged",
+        "vent",
+        "fan",
+        "Nothing is flooding",
+        "stall",
+        "flush handle",
+        "all over the floor",
+        "clog",
+        "hvac",
+        "air condenser",
+        "a/c",
+        "no water coming",
+        "water filter",
+        "water tap",
+        "unscrewed",
+        "dish",
+        "washer",
+        "dryer",
+        "DW leaks",
+        "Water heater leaks",
+        [
+            "grout",
+            "missing"
+        ],
+        [
+            "toilet",
+            "flood"
+        ],
+        [
+            "washroom",
+            "flood"
+        ],
+        [
+            "sink",
+            "flood"
+        ],
+        [
+            "sink",
+            "loose"
+        ],
+        [
+            "sink",
+            "overflow"
+        ],
+        [
+            "no",
+            "hot water"
+        ],
+        [
+            "refrig",
+            "work"
+        ]
+    ],
+    "Plumbing_Leaking_Water_Heaters": [
+        "water heater leaks",
+        "leak from water heater",
+        "HWT leak",
+        [
+            "water heater",
+            "flood"
+        ],
+        [
+            "water heater",
+            "leak"
+        ]
+    ],
+    "Not_Plumbing_Leaking_Water_Heaters": [
+        ""
+    ],
+    "Plumbing_Fixtures_that_are_in_poor_condition": [
+        "loose",
+        "broken",
+        "broke",
+        "missing",
+        "come off",
+        "came off",
+        "doesn't spray",
+        "does not spray",
+        "not spray",
+        "not stable",
+        "fell off",
+        "needs to be tighten up",
+        "faucet sprays",
+        "counter top damaged",
+        "Faucet hard to turn",
+        "toilet crack",
+        "f lappr brkn",
+        [
+            "faucet",
+            "wobbling"
+        ],
+        [
+            "toilet handl",
+            "brkn"
+        ],
+        [
+            "washroom",
+            "broken handle"
+        ],
+        [
+            "faucet",
+            "unscrewed"
+        ],
+        [
+            "toilet seat",
+            "broken"
+        ],
+        [
+            "faucet",
+            "loose"
+        ],
+        [
+            "toilet seat",
+            "coming off"
+        ],
+        [
+            "flapper",
+            "broke"
+        ],
+        [
+            "toilet needs",
+            "new handle"
+        ],
+        [
+            "chain",
+            "snap"
+        ],
+        [
+            "flapper",
+            "broke"
+        ],
+        [
+            "chain",
+            "corrode"
+        ],
+        [
+            "flusher",
+            "rust"
+        ]
+    ],
+    "Not_Plumbing_Fixtures_that_are_in_poor_condition": [
+        "thermostat",
+        "light",
+        "outlet",
+        "breaker",
+        "electricity",
+        "power",
+        "bulb",
+        "door handle",
+        "window",
+        "tile",
+        "drawer hardware",
+        "glass",
+        "door",
+        "stopper",
+        "AC",
+        "towel",
+        "electrical",
+        "lenin",
+        "vent",
+        "ceiling",
+        "elliptical",
+        "cable machine",
+        "fire",
+        "sprinkler",
+        "Air Conditioning",
+        "AC",
+        "service panel",
+        "cabinet",
+        "dish",
+        "washer",
+        "dryer",
+        "floor board",
+        "paint",
+        "paper",
+        "chain broken",
+        "grill",
+        "pool stick",
+        "bbq",
+        "broken chain",
+        "broken crank",
+        "I'maker",
+        "ice maker",
+        "porch lock",
+        "hinge",
+        "caffeine",
+        "coffee",
+        "shelving",
+        "fence",
+        "laminate",
+        "gate",
+        "garbage",
+        "grease filter",
+        "number sign",
+        "closet rod",
+        "toilet roll",
+        "shelving",
+        "tree",
+        "truck",
+        "soap",
+        "bottle",
+        "dispenser",
+        "lock",
+        "water bowl",
+        "air condition",
+        "water heater",
+        [
+            "sensor",
+            "toilet"
+        ],
+        [
+            "tissue",
+            "holder"
+        ],
+        [
+            "paper",
+            "holder"
+        ]
+    ],
+    "No_hot_water": [
+        "hot water",
+        "water doesn't heat up",
+        "No ht wtr",
+        "no hot wtr",
+        "nt ht wtr",
+        "hot wtr",
+        "ht wtr",
+        "hotwater",
+        "only cold water",
+        "no hot water coming out",
+        "no hot water",
+        "Water doesn't get hot",
+        "Cold In Shower",
+        "turn up water heater",
+        "water not getting hot",
+        "Hot water",
+        [
+            "shower",
+            "not get hot"
+        ],
+        [
+            "water",
+            "not get hot"
+        ],
+        [
+            "water",
+            "temperature"
+        ],
+        [
+            "no hot water",
+            "sink"
+        ],
+        [
+            "water",
+            "very cold"
+        ],
+        [
+            "water",
+            "not staying hot"
+        ]
+    ],
+    "Not_No_hot_water": [
+        "grey",
+        "drip",
+        "leak",
+        "hot water handle",
+        "leaking",
+        "leaked",
+        "Please fix the hot water faucet",
+        "different water source",
+        "flood",
+        "HWT leak",
+        "will not stop running",
+        "dish",
+        "washer",
+        "dryer",
+        "appliance",
+        "handle broke",
+        "faucet is broken"
+    ],
+    "Low_or_no_water_pressure": [
+        "water pressure",
+        "shutting water",
+        "no water",
+        "have any water",
+        "not have water",
+        "water supply",
+        "water is not going",
+        "water is alternating",
+        "watee pressure",
+        "no water",
+        "no running water",
+        "water outage",
+        "water is off",
+        "low water pressur",
+        "Water not working",
+        "cold water appears to be off",
+        [
+            "water",
+            "shut off"
+        ],
+        [
+            "tap",
+            "very low in pressure"
+        ],
+        [
+            "water",
+            "trickling very slowly"
+        ],
+        [
+            "water",
+            "seems to be very slow"
+        ],
+        [
+            "water fountain",
+            "running very slow"
+        ],
+        [
+            "sink pressure",
+            "low"
+        ]
+    ],
+    "Not_Low_or_no_water_pressure": [
+        "water is not going down",
+        "drain",
+        "toilet",
+        "knob",
+        "coffee machine",
+        "flush",
+        "Water shut off bulb",
+        "water pressure is very high",
+        "dish",
+        "washer",
+        "dryer",
+        [
+            "water pressure",
+            "is too high"
+        ],
+        [
+            "water",
+            "spray"
+        ]
+    ],
+    "Humidity_mold": [
+        "humidity",
+        "mold",
+        "fungus"
+    ],
+    "Not_Humidity_mold": [
+        "AC is not working",
+        "worried about damage and mold",
+        "dish",
+        "washer",
+        "dryer",
+        "molding"
+    ],
+    "Heating_not_working": [
+        "heating",
+        "not getting warm",
+        "blowing only cold air",
+        "no heat",
+        "no heat",
+        "only blowing cold air",
+        "heater",
+        "heater not working",
+        "NO HEAT",
+        "heat not working",
+        "Heat stopped working",
+        "Heat will not come on",
+        "heat wont turn",
+        "Heat will not turn",
+        "heat not blowing",
+        "heat isnt workin",
+        "heat is not working",
+        "Heat is blowing cold air",
+        "heat is not blowing",
+        "heat blowing cool",
+        "heat blowing cold",
+        "No het",
+        "no ht",
+        "Heater-other problem",
+        "not heat up",
+        "blows out only cold air",
+        "sink",
+        "Icy condition reported",
+        "Hvac Blowing Cold Air",
+        "Heats off in unit",
+        "HVAC Too Cold",
+        [
+            "heater",
+            "blows cold air"
+        ],
+        [
+            "heater",
+            "doesn't work"
+        ],
+        [
+            "heater",
+            "isn't working"
+        ],
+        [
+            "heater",
+            "does not work"
+        ],
+        [
+            "heat",
+            "blows cold air"
+        ],
+        [
+            "heat",
+            "doesn't work"
+        ],
+        [
+            "heat",
+            "isn't working"
+        ],
+        [
+            "heat",
+            "does not work"
+        ],
+        [
+            "no",
+            "heat"
+        ],
+        [
+            "Heat",
+            "not working"
+        ],
+        [
+            "A/C",
+            "not heat up"
+        ],
+        [
+            "heater",
+            "not seem to work"
+        ],
+        [
+            "struggling to get above",
+            "degrees"
+        ],
+        [
+            "heat",
+            "hasn't"
+        ],
+        [
+            "heat",
+            "hasnt"
+        ],
+        [
+            "heat",
+            "hasn t"
+        ],
+        [
+            "heat",
+            "broke"
+        ],
+        [
+            "heat",
+            "does not"
+        ],
+        [
+            "heat",
+            "doesn't"
+        ],
+        [
+            "heat",
+            "doesnt"
+        ],
+        [
+            "heat",
+            "doesn t"
+        ],
+        [
+            "heating",
+            "does not"
+        ],
+        [
+            "heating",
+            "doesn't"
+        ],
+        [
+            "heating",
+            "doesnt"
+        ],
+        [
+            "heating",
+            "doesn t"
+        ],
+        [
+            "does not",
+            "heat"
+        ],
+        [
+            "doesn't",
+            "heat"
+        ],
+        [
+            "doesnt",
+            "heat"
+        ],
+        [
+            "doesn t",
+            "heat"
+        ],
+        [
+            "HVAC",
+            "not heat"
+        ],
+        [
+            "heat",
+            "trouble"
+        ],
+        [
+            "heat",
+            "blowing cold"
+        ],
+        [
+            "heat",
+            "not working"
+        ],
+        [
+            "called",
+            "no heat"
+        ],
+        [
+            "Heater",
+            "not work"
+        ],
+        [
+            "heat",
+            "not working properly"
+        ]
+    ],
+    "Not_Heating_not_working": [
+        "water heater",
+        "swap ac",
+        "controller",
+        "green light",
+        "new nest",
+        "thermostat",
+        "bill",
+        "brownish",
+        "distribute evenly",
+        "hot water",
+        "overnight",
+        "cooler is not working",
+        "heater works fine",
+        "heater works good",
+        "airport",
+        "switch",
+        "bill",
+        "oven",
+        "Air conditioner:",
+        "AC Stopped working",
+        "Air conditioning isn't getting cold",
+        "water",
+        "plumbing",
+        "sink",
+        "light",
+        "after hours",
+        "dish",
+        "washer",
+        "dryer",
+        "hot tub",
+        "HEATING & COOLING: -",
+        "AC went out",
+        "A/C went out",
+        "A/C isn't turning on",
+        "Air conditioner stopped",
+        "doesn't cool",
+        "doesn't get cool",
+        "A/C has been out",
+        "A/c is out",
+        "A/C is completely out",
+        "request filter vent",
+        "cooling needs repair",
+        "cooling won't work",
+        "cooling not work",
+        "cooling doesn't work",
+        "cooling doesn t work",
+        "cooling stopped workin",
+        "cooling doesn’t seem to be working",
+        "cooling not turning on",
+        "cooling won't turn on",
+        "cooling not been working",
+        "cooling not really working",
+        "cooling not putting out cold air",
+        "cooling barely works",
+        "cooling replace",
+        "cooling isn't work",
+        "cooling no",
+        "cooling does not work",
+        "cooling stops working",
+        "cooling stop working",
+        "cooling noise",
+        "cooling isnt working",
+        "cooling isn't blowing",
+        "HVAC needs repair",
+        "HVAC won't work",
+        "HVAC not work",
+        "HVAC doesn't work",
+        "HVAC doesn t work",
+        "HVAC stopped workin",
+        "HVAC doesn’t seem to be working",
+        "HVAC not turning on",
+        "HVAC won't turn on",
+        "HVAC not been working",
+        "HVAC not really working",
+        "HVAC not putting out cold air",
+        "HVAC barely works",
+        "HVAC replace",
+        "HVAC isn't work",
+        "HVAC no",
+        "HVAC does not work",
+        "HVAC stops working",
+        "HVAC stop working",
+        "HVAC noise",
+        "HVAC isnt working",
+        "HVAC isn't blowing",
+        "AC needs repair",
+        "AC won't work",
+        "AC not work",
+        "AC doesn't work",
+        "AC doesn t work",
+        "AC stopped workin",
+        "AC doesn’t seem to be working",
+        "AC not turning on",
+        "AC won't turn on",
+        "AC not been working",
+        "AC not really working",
+        "AC not putting out cold air",
+        "AC barely works",
+        "AC replace",
+        "AC isn't work",
+        "AC no",
+        "AC does not work",
+        "AC stops working",
+        "AC stop working",
+        "AC noise",
+        "AC isnt working",
+        "AC isn't blowing",
+        "A/C needs repair",
+        "A/C won't work",
+        "A/C not work",
+        "A/C doesn't work",
+        "A/C doesn t work",
+        "A/C stopped workin",
+        "A/C doesn’t seem to be working",
+        "A/C not turning on",
+        "A/C won't turn on",
+        "A/C not been working",
+        "A/C not really working",
+        "A/C not putting out cold air",
+        "A/C barely works",
+        "A/C replace",
+        "A/C isn't work",
+        "A/C no",
+        "A/C does not work",
+        "A/C stops working",
+        "A/C stop working",
+        "A/C noise",
+        "A/C isnt working",
+        "A/C isn't blowing",
+        "conditioning needs repair",
+        "conditioning won't work",
+        "conditioning not work",
+        "conditioning doesn't work",
+        "conditioning doesn t work",
+        "conditioning stopped workin",
+        "conditioning doesn’t seem to be working",
+        "conditioning not turning on",
+        "conditioning won't turn on",
+        "conditioning not been working",
+        "conditioning not really working",
+        "conditioning not putting out cold air",
+        "conditioning barely works",
+        "conditioning replace",
+        "conditioning isn't work",
+        "conditioning no",
+        "conditioning does not work",
+        "conditioning stops working",
+        "conditioning stop working",
+        "conditioning noise",
+        "conditioning isnt working",
+        "conditioning isn't blowing",
+        "conditioner needs repair",
+        "conditioner won't work",
+        "conditioner not work",
+        "conditioner doesn't work",
+        "conditioner doesn t work",
+        "conditioner stopped workin",
+        "conditioner doesn’t seem to be working",
+        "conditioner not turning on",
+        "conditioner won't turn on",
+        "conditioner not been working",
+        "conditioner not really working",
+        "conditioner not putting out cold air",
+        "conditioner barely works",
+        "conditioner replace",
+        "conditioner isn't work",
+        "conditioner no",
+        "conditioner does not work",
+        "conditioner stops working",
+        "conditioner stop working",
+        "conditioner noise",
+        "conditioner isnt working",
+        "conditioner isn't blowing",
+        "A/C does not cool",
+        "attic fan nois",
+        "Other - Please see comments",
+        "Vents/ducts",
+        "cook top",
+        "filter",
+        [
+            "clean",
+            "vent"
+        ],
+        [
+            "A/C",
+            "not cooling"
+        ],
+        [
+            "AC",
+            "blowing hot"
+        ],
+        [
+            "AC",
+            "broken"
+        ],
+        [
+            "AC",
+            "not drop below"
+        ],
+        [
+            "A/C",
+            "broken"
+        ],
+        [
+            "hvac",
+            "noise"
+        ],
+        [
+            "breaker",
+            "reset"
+        ],
+        [
+            "hvac",
+            "noise"
+        ],
+        [
+            "vent",
+            "noise"
+        ],
+        [
+            "AC",
+            "loud"
+        ],
+        [
+            "A/C",
+            "loud"
+        ],
+        [
+            "Air conditioning",
+            "loud"
+        ],
+        [
+            "air conditioner",
+            "loud"
+        ],
+        [
+            "temperature",
+            "increasing after turning it down"
+        ],
+        [
+            "air",
+            "isn't cooling"
+        ],
+        [
+            "AC",
+            "isn't cooling"
+        ],
+        [
+            "A/C",
+            "isn't cooling"
+        ],
+        [
+            "air",
+            "isnt cool"
+        ],
+        [
+            "AC",
+            "isnt cool"
+        ],
+        [
+            "A/C",
+            "isnt cool"
+        ],
+        [
+            "A/c",
+            "loud"
+        ],
+        [
+            "window",
+            "draft"
+        ],
+        [
+            "window",
+            "condensation"
+        ],
+        [
+            "window",
+            "leak"
+        ],
+        [
+            "window",
+            "seal"
+        ],
+        [
+            "window",
+            "cool"
+        ],
+        [
+            "loud",
+            "noise"
+        ],
+        [
+            "filter",
+            "chang"
+        ]
+    ],
+    "AC_not_working_properly": [
+        "A/C",
+        "AC is not working",
+        "does not cool",
+        "not cooling effectively",
+        "doesn't have enough power",
+        "not blowing cold air",
+        "not blowing out very strong",
+        "doesnt cool lower",
+        "not able to cool below",
+        "doesn t cool the apartment effectively",
+        "not cooling properly",
+        "not cooling down",
+        "ac down below",
+        "doesn t seem to have enough power",
+        "blowing warm air",
+        "doesnt blow cold air",
+        "AC is blowing hot air",
+        "AC not cooling",
+        "No A.C.",
+        "AC isn't working",
+        "AC broke",
+        "AC is broken",
+        "A.C.",
+        "A/c",
+        "a/c filter",
+        "A/c filter",
+        "A/C filter",
+        "AC blowing hot air",
+        "AC doesnt work",
+        "AC down",
+        "ac flt",
+        "ac fltr",
+        "AC fltr",
+        "AC flt",
+        "AC frzn",
+        "ac is out",
+        "AC nt cl",
+        "ac nt collin",
+        "ac nt coln",
+        "ac nt cool",
+        "ac nt wrk",
+        "ac prblm",
+        "ac nt blwn cld",
+        "ac not wrkng",
+        "ac nt wor",
+        "ac nt gttn cld",
+        "ac nt coon prply",
+        "Ac unit is leaking",
+        "air filter",
+        "Air conditioner doesn't turn on",
+        "Air Conditioner is blowing hot air",
+        "Air conditioner is frozen over",
+        "Air conditioner isn't cooling prop",
+        "Replace ac filter",
+        "replace a/c filter",
+        "AC keeps going out",
+        "no ac",
+        "AC went out",
+        "AC does not work",
+        "Change AC fitler",
+        "change a/c filter",
+        "no cool",
+        "Air conditioner:",
+        "Check AC",
+        "chck ac",
+        "check the air",
+        "HVAC:",
+        "A/C-other problem",
+        "HEATING & COOLING: -",
+        "Air conditioner stopped",
+        "doesn't get cool",
+        "A/C has been out",
+        "A/c is out",
+        "A/C is completely out",
+        "issue with AC",
+        "A/C does not cool",
+        "AC doesn't work",
+        "Doesn't cool down",
+        "Doesn't cool",
+        [
+            "HVAC",
+            "needs repair"
+        ],
+        [
+            "HVAC",
+            "won't work"
+        ],
+        [
+            "HVAC",
+            "not work"
+        ],
+        [
+            "HVAC",
+            "doesn't work"
+        ],
+        [
+            "HVAC",
+            "doesn t work"
+        ],
+        [
+            "HVAC",
+            "stopped workin"
+        ],
+        [
+            "HVAC",
+            "doesn’t seem to be working"
+        ],
+        [
+            "HVAC",
+            "not turning on"
+        ],
+        [
+            "HVAC",
+            "won't turn on"
+        ],
+        [
+            "HVAC",
+            "not been working"
+        ],
+        [
+            "HVAC",
+            "not really working"
+        ],
+        [
+            "HVAC",
+            "not putting out cold air"
+        ],
+        [
+            "HVAC",
+            "barely works"
+        ],
+        [
+            "HVAC",
+            "replace"
+        ],
+        [
+            "HVAC",
+            "isn't work"
+        ],
+        [
+            "HVAC",
+            "no"
+        ],
+        [
+            "HVAC",
+            "does not work"
+        ],
+        [
+            "HVAC",
+            "stops working"
+        ],
+        [
+            "HVAC",
+            "stop working"
+        ],
+        [
+            "HVAC",
+            "noise"
+        ],
+        [
+            "HVAC",
+            "isnt working"
+        ],
+        [
+            "HVAC",
+            "isn't blowing cold air"
+        ],
+        [
+            "HVAC",
+            "isn t blowing"
+        ],
+        [
+            "AC",
+            "needs repair"
+        ],
+        [
+            "AC",
+            "won't work"
+        ],
+        [
+            "AC",
+            "not work"
+        ],
+        [
+            "AC",
+            "doesn't work"
+        ],
+        [
+            "AC",
+            "doesn t work"
+        ],
+        [
+            "AC",
+            "stopped workin"
+        ],
+        [
+            "AC",
+            "doesn’t seem to be working"
+        ],
+        [
+            "AC",
+            "not turning on"
+        ],
+        [
+            "AC",
+            "won't turn on"
+        ],
+        [
+            "AC",
+            "not been working"
+        ],
+        [
+            "AC",
+            "not really working"
+        ],
+        [
+            "AC",
+            "not putting out cold air"
+        ],
+        [
+            "AC",
+            "barely works"
+        ],
+        [
+            "AC",
+            "replace"
+        ],
+        [
+            "AC",
+            "isn't work"
+        ],
+        [
+            "AC",
+            "no"
+        ],
+        [
+            "AC",
+            "does not work"
+        ],
+        [
+            "AC",
+            "stops working"
+        ],
+        [
+            "AC",
+            "stop working"
+        ],
+        [
+            "AC",
+            "noise"
+        ],
+        [
+            "AC",
+            "isnt working"
+        ],
+        [
+            "AC",
+            "isn't blowing"
+        ],
+        [
+            "AC",
+            "isn t blowing"
+        ],
+        [
+            "A/C",
+            "needs repair"
+        ],
+        [
+            "A/C",
+            "won't work"
+        ],
+        [
+            "A/C",
+            "not work"
+        ],
+        [
+            "A/C",
+            "doesn't work"
+        ],
+        [
+            "A/C",
+            "doesn t work"
+        ],
+        [
+            "A/C",
+            "stopped workin"
+        ],
+        [
+            "A/C",
+            "doesn’t seem to be working"
+        ],
+        [
+            "A/C",
+            "not turning on"
+        ],
+        [
+            "A/C",
+            "won't turn on"
+        ],
+        [
+            "A/C",
+            "not been working"
+        ],
+        [
+            "A/C",
+            "not really working"
+        ],
+        [
+            "A/C",
+            "not putting out cold air"
+        ],
+        [
+            "A/C",
+            "barely works"
+        ],
+        [
+            "A/C",
+            "replace"
+        ],
+        [
+            "A/C",
+            "isn't work"
+        ],
+        [
+            "A/C",
+            "no"
+        ],
+        [
+            "A/C",
+            "does not work"
+        ],
+        [
+            "A/C",
+            "stops working"
+        ],
+        [
+            "A/C",
+            "stop working"
+        ],
+        [
+            "A/C",
+            "noise"
+        ],
+        [
+            "A/C",
+            "isnt working"
+        ],
+        [
+            "A/C",
+            "isn't blowing"
+        ],
+        [
+            "A/C",
+            "isn t blowing cold air"
+        ],
+        [
+            "cooling",
+            "needs repair"
+        ],
+        [
+            "cooling",
+            "won't work"
+        ],
+        [
+            "cooling",
+            "not work"
+        ],
+        [
+            "cooling",
+            "doesn't work"
+        ],
+        [
+            "cooling",
+            "doesn t work"
+        ],
+        [
+            "cooling",
+            "stopped workin"
+        ],
+        [
+            "cooling",
+            "doesn’t seem to be working"
+        ],
+        [
+            "cooling",
+            "not turning on"
+        ],
+        [
+            "cooling",
+            "won't turn on"
+        ],
+        [
+            "cooling",
+            "not been working"
+        ],
+        [
+            "cooling",
+            "not really working"
+        ],
+        [
+            "cooling",
+            "not putting out cold air"
+        ],
+        [
+            "cooling",
+            "barely works"
+        ],
+        [
+            "cooling",
+            "replace"
+        ],
+        [
+            "cooling",
+            "isn't work"
+        ],
+        [
+            "cooling",
+            "no"
+        ],
+        [
+            "cooling",
+            "does not work"
+        ],
+        [
+            "cooling",
+            "stops working"
+        ],
+        [
+            "cooling",
+            "stop working"
+        ],
+        [
+            "cooling",
+            "noise"
+        ],
+        [
+            "cooling",
+            "isnt working"
+        ],
+        [
+            "cooling",
+            "isn't blowing"
+        ],
+        [
+            "cooling",
+            "isn t blowing"
+        ],
+        [
+            "air",
+            "needs repair"
+        ],
+        [
+            "air",
+            "won't work"
+        ],
+        [
+            "air",
+            "not work"
+        ],
+        [
+            "air",
+            "doesn't work"
+        ],
+        [
+            "air",
+            "doesn t work"
+        ],
+        [
+            "air",
+            "stopped workin"
+        ],
+        [
+            "air",
+            "doesn’t seem to be working"
+        ],
+        [
+            "air",
+            "not turning on"
+        ],
+        [
+            "air",
+            "won't turn on"
+        ],
+        [
+            "air",
+            "not been working"
+        ],
+        [
+            "air",
+            "not really working"
+        ],
+        [
+            "air",
+            "not putting out cold air"
+        ],
+        [
+            "air",
+            "barely works"
+        ],
+        [
+            "air",
+            "replace"
+        ],
+        [
+            "air",
+            "isn't work"
+        ],
+        [
+            "air",
+            "no"
+        ],
+        [
+            "air",
+            "does not work"
+        ],
+        [
+            "air",
+            "stops working"
+        ],
+        [
+            "air",
+            "stop working"
+        ],
+        [
+            "air",
+            "noise"
+        ],
+        [
+            "air",
+            "isnt working"
+        ],
+        [
+            "air",
+            "isn't blowing"
+        ],
+        [
+            "air",
+            "isn t blowing"
+        ],
+        [
+            "AC",
+            "needs service"
+        ],
+        [
+            "AC",
+            "does not work"
+        ],
+        [
+            "air",
+            "isn't working"
+        ],
+        [
+            "airer",
+            "not working"
+        ],
+        [
+            "air",
+            "really weak"
+        ],
+        [
+            "AC",
+            "isn't working"
+        ],
+        [
+            "AC",
+            "hasn’t been cooling"
+        ],
+        [
+            "airing",
+            "isn t blowing"
+        ],
+        [
+            "airing",
+            "not producing cold air"
+        ],
+        [
+            "a/c",
+            "not cooling"
+        ],
+        [
+            "change",
+            "a/c filter"
+        ],
+        [
+            "A.C",
+            "not working"
+        ],
+        [
+            "AC",
+            "not working"
+        ],
+        [
+            "AC",
+            "does not get cold"
+        ],
+        [
+            "AC",
+            "does not turn on"
+        ],
+        [
+            "AC",
+            "not work"
+        ],
+        [
+            "AC",
+            "isn't cooling"
+        ],
+        [
+            "AC",
+            "is not cooling"
+        ],
+        [
+            "AC",
+            "is nt cool"
+        ],
+        [
+            "AC",
+            "is nt wrk"
+        ],
+        [
+            "AC",
+            "only blowing out hot"
+        ],
+        [
+            "AC",
+            "only blowing hot"
+        ],
+        [
+            "AC",
+            "isn't cooling"
+        ],
+        [
+            "AC",
+            "not blowing cool"
+        ],
+        [
+            "AC",
+            "not cool"
+        ],
+        [
+            "AC",
+            "not working"
+        ],
+        [
+            "AC",
+            "not working"
+        ],
+        [
+            "AC",
+            "not working"
+        ],
+        [
+            "AC",
+            "stopped workin"
+        ],
+        [
+            "AC",
+            "not turning on"
+        ],
+        [
+            "AC",
+            "will not cool"
+        ],
+        [
+            "AC",
+            "will not turn"
+        ],
+        [
+            "AC",
+            "wont turn"
+        ],
+        [
+            "AC",
+            "will not go below"
+        ],
+        [
+            "AC",
+            "will not come on"
+        ],
+        [
+            "AC",
+            "wont cool"
+        ],
+        [
+            "AC",
+            "won't cool"
+        ],
+        [
+            "AC",
+            "wont shut"
+        ],
+        [
+            "Air conditioning",
+            "wont get cold"
+        ],
+        [
+            "Air conditioning",
+            "isn't turn"
+        ],
+        [
+            "AC",
+            "went out"
+        ],
+        [
+            "AC",
+            "isn't functioning"
+        ],
+        [
+            "HVAC",
+            "not cooling"
+        ],
+        [
+            "HVAC",
+            "not clg"
+        ],
+        [
+            "A/C",
+            "not clg"
+        ],
+        [
+            "Ac",
+            "not clg"
+        ],
+        [
+            "A.C",
+            "not clg"
+        ],
+        [
+            "air",
+            "not clg"
+        ],
+        [
+            "HVAC",
+            "not cold"
+        ],
+        [
+            "A/C",
+            "not cold"
+        ],
+        [
+            "Ac",
+            "not cold"
+        ],
+        [
+            "A.C",
+            "not cold"
+        ],
+        [
+            "air",
+            "not cold"
+        ],
+        [
+            "HVAC",
+            "chk"
+        ],
+        [
+            "A/C",
+            "chk"
+        ],
+        [
+            "Ac",
+            "chk"
+        ],
+        [
+            "A.C",
+            "chk"
+        ],
+        [
+            "air",
+            "chk"
+        ],
+        [
+            "HVAC",
+            "check"
+        ],
+        [
+            "A/C",
+            "check"
+        ],
+        [
+            "Ac",
+            "check"
+        ],
+        [
+            "A.C",
+            "check"
+        ],
+        [
+            "air",
+            "check"
+        ],
+        [
+            "HVAC",
+            "hot"
+        ],
+        [
+            "A/C",
+            "hot"
+        ],
+        [
+            "Ac",
+            "hot"
+        ],
+        [
+            "A.C",
+            "hot"
+        ],
+        [
+            "air",
+            "hot"
+        ],
+        [
+            "HVAC",
+            "ht"
+        ],
+        [
+            "A/C",
+            "ht"
+        ],
+        [
+            "Ac",
+            "ht"
+        ],
+        [
+            "A.C",
+            "ht"
+        ],
+        [
+            "air",
+            "ht"
+        ],
+        [
+            "air",
+            "quality"
+        ],
+        [
+            "A/C",
+            "not come on"
+        ],
+        [
+            "AC",
+            "not come on"
+        ],
+        [
+            "HVAC",
+            "not come on"
+        ],
+        [
+            "Air conditioning",
+            "not come on"
+        ],
+        [
+            "Air conditioner",
+            "gone out"
+        ],
+        [
+            "AC",
+            "loud"
+        ],
+        [
+            "A/C",
+            "loud"
+        ],
+        [
+            "Air conditioning",
+            "loud"
+        ],
+        [
+            "air conditioner",
+            "loud"
+        ],
+        [
+            "temperature",
+            "increasing after turning it down"
+        ],
+        [
+            "AC",
+            "not cool"
+        ],
+        [
+            "A/C",
+            "not cool"
+        ]
+    ],
+    "Not_AC_not_working_properly": [
+        "toilet",
+        "sink",
+        "bathroom",
+        "bath",
+        "shower",
+        "flooding",
+        "dripping",
+        "grout",
+        "no water",
+        "nest thermostat",
+        "account",
+        "outlet",
+        "gas alarm",
+        "no power in the living room",
+        "light",
+        "breaker",
+        "beeaker",
+        "detector",
+        "alarm",
+        "battery",
+        "batteries",
+        "DW",
+        "vinyl",
+        "door lock",
+        "hallway floors",
+        "Garbage Disposal",
+        "heat isn't working",
+        "no heat",
+        "door",
+        "A/C filt",
+        "AC filt",
+        "A.C. filt",
+        "HVAC filt",
+        "air filter",
+        "possible leak",
+        "A/C filter",
+        "leak",
+        "evenly",
+        "A/C fit",
+        "AC fit",
+        "A.C. fit",
+        "A/c  fltr",
+        "ELECTRICAL",
+        "a/c filr",
+        "AC filr",
+        "a.c. filr",
+        "a/c flt",
+        "AC flt",
+        "a.c. flt",
+        "clean a/c ducts",
+        "dcts",
+        "washer",
+        "patio",
+        "balcony",
+        "heat not working",
+        "thermostat not working",
+        "smells bad",
+        "thermostat is out",
+        "not heating",
+        "turn on heat",
+        "sheetrock repair",
+        "goc",
+        "drip sound",
+        "heater",
+        "No matter how high we turn up the temperature",
+        "blows out only cold air",
+        "furnace",
+        "doesn't get hotter",
+        "dust",
+        "computers",
+        "heater is",
+        "ceiling vent",
+        "hot water",
+        "urinal",
+        "after hours",
+        "Construction-type odor",
+        "plumbing",
+        "Interior window gasket",
+        "wet ceiling tiles",
+        "damaged ceiling tile",
+        "replaced glass",
+        "Icy condition reported",
+        "dish",
+        "washer",
+        "dryer",
+        "portable",
+        "Thermostat stopped working",
+        "Thermostat stop working",
+        "thermostat went out",
+        "thermostat will not come on",
+        "window crack",
+        "mouse",
+        "no heat",
+        "Heat is not working",
+        "heat does not work",
+        "heat broke",
+        "heating does not",
+        "heating doesn't",
+        "heating doesnt",
+        "heating doesn t",
+        "heat does not",
+        "heat doesn't",
+        "heat doesnt",
+        "heat doesn t",
+        "thermostat does not",
+        "thermostat doesn't",
+        "thermostat not turning on",
+        "heat in my apartment isn't",
+        "don't think my heat is working",
+        "OT - HVAC",
+        "ice maker",
+        "fridge",
+        "refrigerator",
+        "elevator sign",
+        "white noise",
+        "freight elevator",
+        "emergency boxes",
+        "vendor access",
+        "floor sticker",
+        "picture frame",
+        "spider",
+        "soap",
+        "top hinge",
+        "low hinge",
+        "replace filter",
+        "new filter",
+        [
+            "A/c",
+            "lek"
+        ],
+        [
+            "A/c",
+            "is lk"
+        ],
+        [
+            "A/c",
+            "lkg"
+        ],
+        [
+            "a.c.",
+            "lek"
+        ],
+        [
+            "a.c.",
+            "is lk"
+        ],
+        [
+            "a.c.",
+            "lkg"
+        ],
+        [
+            "AC",
+            "lek"
+        ],
+        [
+            "AC",
+            "is lk"
+        ],
+        [
+            "AC",
+            "lkg"
+        ],
+        [
+            "AC",
+            "lkn"
+        ],
+        [
+            "a.c.",
+            "lkn"
+        ],
+        [
+            "A/c",
+            "lkn"
+        ],
+        [
+            "AC",
+            "fiilter"
+        ],
+        [
+            "a.c.",
+            "fiilter"
+        ],
+        [
+            "A/c",
+            "fiilter"
+        ],
+        [
+            "AC",
+            "ftr"
+        ],
+        [
+            "a.c.",
+            "ftr"
+        ],
+        [
+            "A/c",
+            "ftr"
+        ],
+        [
+            "thermostat",
+            "blank"
+        ],
+        [
+            "thermostat",
+            "not working"
+        ],
+        [
+            "A/C",
+            "not heat up"
+        ],
+        [
+            "struggling to get above",
+            "degrees"
+        ],
+        [
+            "vent",
+            "dirty"
+        ],
+        [
+            "heater",
+            "not warm"
+        ],
+        [
+            "too cold",
+            "despite 26degree thermostat"
+        ],
+        [
+            "washroom",
+            "handle"
+        ],
+        [
+            "burning smell",
+            "electrical room"
+        ],
+        [
+            "sprinkler",
+            "head"
+        ],
+        [
+            "stairwell",
+            "not closing properly"
+        ],
+        [
+            "hvac",
+            "noise"
+        ],
+        [
+            "stall",
+            "restroom"
+        ],
+        [
+            "stall",
+            "toilet"
+        ],
+        [
+            "HVAC cover",
+            "broken"
+        ],
+        [
+            "HVAC cover",
+            "came off"
+        ],
+        [
+            "Grate",
+            "missing"
+        ],
+        [
+            "filter",
+            "replace"
+        ],
+        [
+            "thermostat",
+            "no power"
+        ],
+        [
+            "thermostat",
+            "disconnected from power"
+        ],
+        [
+            "thermostat",
+            "no electricity"
+        ],
+        [
+            "thermostat",
+            "not connecting to power"
+        ],
+        [
+            "It's very cold",
+            "in my apartment"
+        ],
+        [
+            "It's very cold",
+            "in my apartment"
+        ],
+        [
+            "problem",
+            "neighbour"
+        ],
+        [
+            "need",
+            "filter"
+        ],
+        [
+            "filter",
+            "chang"
+        ],
+        [
+            "missing",
+            "fire sprinkler cover"
+        ],
+        [
+            "no power",
+            "electric plug"
+        ],
+        [
+            "tv",
+            "no signal"
+        ],
+        [
+            "tv",
+            "mount"
+        ],
+        [
+            "tape",
+            "carpet"
+        ],
+        [
+            "kitchen",
+            "hinge"
+        ]
+    ],
+    "Thermostat_Issues": [
+        "HVAC panel",
+        "google",
+        "nest",
+        "thermostat",
+        "controller for heating and air conditioning",
+        "thrmstt",
+        "thermst",
+        [
+            "controller",
+            "heating"
+        ],
+        [
+            "controller",
+            "air conditioning"
+        ],
+        [
+            "controller",
+            "ac"
+        ],
+        [
+            "controller",
+            "a/c"
+        ],
+        [
+            "HVAC:",
+            "thrm"
+        ]
+    ],
+    "Not_Thermostat_Issues": [
+        "bird",
+        "no hot water",
+        "water heater",
+        "AC is blowing hot",
+        "AC is not working properly",
+        "AC not working",
+        "air filter",
+        "AC is out",
+        "not cool",
+        "dust",
+        "ceiling vent",
+        "air conditioner",
+        "AC is weak",
+        "blowing hot air",
+        "stall",
+        "urinal",
+        "flush",
+        "flood",
+        "clog",
+        "spider",
+        "wasp",
+        "hornet",
+        [
+            "fan",
+            "blow"
+        ],
+        [
+            "cool",
+            "unit"
+        ],
+        [
+            "Air Conditioning",
+            "broke"
+        ],
+        [
+            "air conditioning",
+            "not working"
+        ],
+        [
+            "isn t",
+            "cooling"
+        ],
+        [
+            "isn't",
+            "cooling"
+        ],
+        [
+            "isnt",
+            "cooling"
+        ],
+        [
+            "is not",
+            "cooling"
+        ],
+        [
+            "heat",
+            "broke"
+        ],
+        [
+            "electric",
+            "outlet"
+        ],
+        [
+            "leak",
+            "tap"
+        ],
+        [
+            "leak",
+            "ceiling"
+        ],
+        [
+            "contractor",
+            "quote"
+        ],
+        [
+            "bulb",
+            "replace"
+        ]
+    ],
+    "Smell_in_HVAC": [
+        "odor",
+        "smell",
+        [
+            "hvoc",
+            "smell"
+        ],
+        [
+            "ac",
+            "smell"
+        ]
+    ],
+    "Not_Smell_in_HVAC": [
+        "electrical room",
+        "washroom",
+        "plumbing",
+        "dish",
+        "washer",
+        "dryer",
+        "water heater",
+        "water smell",
+        "smell of paint"
+    ],
+    "Miscellaneous_HVAC": [
+        "gas bill",
+        "heat bill",
+        "change filters",
+        [
+            "coil",
+            "frozen"
+        ],
+        [
+            "air conditioner",
+            "freezing"
+        ],
+        [
+            "vent hood",
+            "barely"
+        ]
+    ],
+    "Not_Miscellaneous_HVAC": [
+        ""
+    ],
+    "Fan_issues": [
+        "fan",
+        "bathroom vent",
+        "HVAC noise",
+        "hood fan",
+        [
+            "vent",
+            "dust"
+        ],
+        [
+            "vent",
+            "dirty"
+        ],
+        [
+            "fan",
+            "dirty"
+        ],
+        [
+            "fan",
+            "dust"
+        ],
+        [
+            "hvac",
+            "noise"
+        ],
+        [
+            "fan",
+            "clog"
+        ],
+        [
+            "hvac",
+            "noise"
+        ],
+        [
+            "vent",
+            "noise"
+        ],
+        [
+            "vent",
+            "sound"
+        ],
+        [
+            "fan",
+            "sound"
+        ],
+        [
+            "vent",
+            "clog"
+        ],
+        [
+            "noise",
+            "hvac"
+        ]
+    ],
+    "Not_Fan_issues": [
+        "leaking",
+        "dripping",
+        "leaks",
+        "water",
+        "oven",
+        "install",
+        "maintenance",
+        "light",
+        "fan will turn on",
+        "fan is working",
+        "air keeps running",
+        "fans are blowing",
+        "air coming out",
+        "fan is on",
+        "fan has been running",
+        "electrical room",
+        "sewage smell",
+        "wash",
+        "dryer",
+        [
+            "no",
+            "heat"
+        ]
+    ],
+    "HVAC_drip_or_leak": [
+        "AC is leaking",
+        "AC is lekn",
+        "ac is lekn",
+        "ac is leaking",
+        "AC leaking",
+        "AC lekn",
+        "ac lekn",
+        "Ac lkng",
+        "AC lkng",
+        "leak from vent",
+        [
+            "leaking",
+            "HVAC"
+        ],
+        [
+            "leaking",
+            "a.c."
+        ],
+        [
+            "leaking",
+            "A/C"
+        ],
+        [
+            "dripping",
+            "HVAC"
+        ],
+        [
+            "dripping",
+            "a.c."
+        ],
+        [
+            "dripping",
+            "A/C"
+        ],
+        [
+            "vents",
+            "are leaking"
+        ],
+        [
+            "pool of water",
+            "HVAC filter"
+        ],
+        [
+            "leaking",
+            "exhaust"
+        ],
+        [
+            "air condition unit",
+            "leaking"
+        ],
+        [
+            "exhaust",
+            "leaking"
+        ],
+        [
+            "air condition",
+            "leaking"
+        ],
+        [
+            "air vent",
+            "leak"
+        ],
+        [
+            "water is coming out",
+            "air conditioning vent"
+        ],
+        [
+            "A/C",
+            "leak"
+        ],
+        [
+            "a.c.",
+            "leak"
+        ],
+        [
+            "a/c",
+            "leaking"
+        ],
+        [
+            "cooling",
+            "leak"
+        ],
+        [
+            "cond",
+            "leak"
+        ],
+        [
+            "condensation",
+            "leak"
+        ],
+        [
+            "condensator",
+            "leak"
+        ],
+        [
+            "AC",
+            "drip"
+        ],
+        [
+            "AC",
+            "dripping"
+        ],
+        [
+            "Ac",
+            "leak"
+        ],
+        [
+            "Air Conditioning",
+            "drip"
+        ],
+        [
+            "HVAC",
+            "leak"
+        ],
+        [
+            "A/c",
+            "lek"
+        ],
+        [
+            "A/c",
+            "is lk"
+        ],
+        [
+            "A/c",
+            "lkg"
+        ],
+        [
+            "a.c.",
+            "lek"
+        ],
+        [
+            "a.c.",
+            "is lk"
+        ],
+        [
+            "a.c.",
+            "lkg"
+        ],
+        [
+            "AC",
+            "lek"
+        ],
+        [
+            "AC",
+            "is lk"
+        ],
+        [
+            "AC",
+            "lkg"
+        ],
+        [
+            "AC",
+            "lkn"
+        ],
+        [
+            "a.c.",
+            "lkn"
+        ],
+        [
+            "A/c",
+            "lkn"
+        ],
+        [
+            "fan",
+            "leak"
+        ],
+        [
+            "vent",
+            "leak"
+        ],
+        [
+            "vent",
+            "drip"
+        ],
+        [
+            "a/c",
+            "coil leak"
+        ],
+        [
+            "AC",
+            "coil leak"
+        ],
+        [
+            "air cond",
+            "coil leak"
+        ]
+    ],
+    "Not_HVAC_drip_or_leak": [
+        "sink",
+        "faucet",
+        "shower",
+        "toilet",
+        "bathroom",
+        "No electric",
+        "water tap",
+        "urinal",
+        "kitchenette",
+        "coffee machine",
+        "plumbing",
+        "sewage",
+        "ceiling leak",
+        "Water leak from ceiling",
+        "panels in the ceiling has water damage",
+        "active dripping leak",
+        "active water dripping from the ceiling",
+        "ceiling leak",
+        "dripping from the lower concourse",
+        "sprinkler",
+        "leak coming from the ceiling in the suit room",
+        "electrical panel is beside leak",
+        "drain pipe",
+        "pipe by the back",
+        "dish",
+        "wash",
+        "dryer",
+        "water heater",
+        [
+            "urinal",
+            "running"
+        ],
+        [
+            "hot",
+            "water"
+        ],
+        [
+            "washroom",
+            "leak"
+        ],
+        [
+            "leak",
+            "ceiling pipe"
+        ],
+        [
+            "leak",
+            "men's"
+        ],
+        [
+            "leak",
+            "mens"
+        ],
+        [
+            "leak",
+            "tap"
+        ],
+        [
+            "active leak",
+            "ceiling"
+        ],
+        [
+            "ceiling tile",
+            "carpentry"
+        ],
+        [
+            "ceiling tile",
+            "leak"
+        ],
+        [
+            "ceiling",
+            "water leak"
+        ],
+        [
+            "water damage",
+            "ceiling"
+        ],
+        [
+            "leak from",
+            "pipe"
+        ],
+        [
+            "crack",
+            "on a pipe"
+        ]
+    ],
+    "Unbalanced_HVAC": [
+        "AC not distribute evenly",
+        "heating not distribute evenly",
+        "temp hotter than"
+    ],
+    "Not_Unbalanced_HVAC": [
+        "air vent",
+        "water",
+        "fan",
+        "alarm",
+        "smell",
+        "nest app"
+    ],
+    "Inadequate_HVAC_capacity": [
+        ""
+    ],
+    "Not_Inadequate_HVAC_capacity": [
+        ""
+    ],
+    "Electrical": [
+        "no electricity",
+        "no power",
+        "power outage",
+        "outlet",
+        "power is out",
+        "electric off",
+        "without power",
+        "breaker",
+        "power out",
+        "Light flickers",
+        "Light does not work properly",
+        "No electric",
+        "electrical:",
+        "Electrical:",
+        "wiring",
+        "Lights keep turning off",
+        [
+            "the power",
+            "is out"
+        ],
+        [
+            "electricity",
+            "not working"
+        ],
+        [
+            "burning",
+            "electrical"
+        ],
+        [
+            "breaker",
+            "reset"
+        ],
+        [
+            "outlet",
+            "not work"
+        ]
+    ],
+    "Not_Electrical": [
+        "door",
+        "light",
+        "lght",
+        "lgh",
+        "lght",
+        "blb",
+        "lgt ou",
+        "lgt ut",
+        "ligt",
+        "lig dim",
+        "lgts",
+        "lgjts",
+        "lgt",
+        "lig ot",
+        "lght",
+        "water heater",
+        "hot water",
+        "water",
+        "fan",
+        "meet with resident",
+        "tv",
+        "install",
+        "alarm",
+        "walk-through",
+        "lamp",
+        "Air conditioning",
+        "AC is not working",
+        "Please confirm if we had a power outage",
+        [
+            "hot",
+            "water"
+        ],
+        [
+            "water",
+            "heater"
+        ]
+    ],
+    "Fire": [
+        "Smoke/CO detector not working",
+        [
+            "sprinkler",
+            "head"
+        ],
+        [
+            "sprinkler",
+            "coming out"
+        ],
+        [
+            "sprinkler",
+            "leak"
+        ]
+    ],
+    "Not_Fire": [
+        "sprinkler room"
+    ],
+    "Window_issues": [
+        "Window",
+        "Glass"
+    ],
+    "Not_Window_issues": [
+        "shards",
+        "Glass BOX",
+        "Glassbox",
+        "broken glass",
+        "broke a glass",
+        "shattered glass",
+        "glass was dropped",
+        "glass door",
+        "bottle",
+        "glass bowl",
+        "deceased bird",
+        "clean windowsill",
+        "broken container",
+        "Electrical - Outlet:",
+        "signage is stuck to the",
+        "Plexi Glass",
+        "plexiglass",
+        "paint on",
+        "dropped",
+        "bowl",
+        "water spill",
+        "Vent near window",
+        "Street window East side of suite. It is drafty",
+        "Too Cold:",
+        "Too Hot",
+        "Light Out/Flickering/Cover",
+        "Douglass",
+        "not opening properly",
+        "leaves from tree",
+        "entrance door",
+        "Clean all glass",
+        "clean interior windows",
+        "hand print",
+        "handprint",
+        "fingerprint",
+        "finger print",
+        "shower",
+        "door",
+        "cover",
+        "dirty",
+        "cleaning",
+        [
+            "off",
+            "frame"
+        ],
+        [
+            "repair",
+            "sliding glass doors"
+        ]
+    ],
+    "Window_Leak": [
+        [
+            "window",
+            "leak"
+        ],
+        [
+            "window",
+            "drip"
+        ],
+        [
+            "window",
+            "water"
+        ],
+        [
+            "window",
+            "wet"
+        ],
+        [
+            "glass",
+            "leak"
+        ],
+        [
+            "glass",
+            "drip"
+        ],
+        [
+            "glass",
+            "water"
+        ],
+        [
+            "glass",
+            "wet"
+        ],
+        [
+            "window",
+            "moisture"
+        ],
+        [
+            "window",
+            "mold"
+        ]
+    ],
+    "Not_Window_Leak": [
+        "shards",
+        "Glass BOX",
+        "Glassbox",
+        "broken glass",
+        "broke a glass",
+        "shattered glass",
+        "glass was dropped",
+        "glass door",
+        "bottle",
+        "glass bowl",
+        "deceased bird",
+        "clean windowsill",
+        "broken container",
+        "Electrical - Outlet: signage is stuck to the",
+        "Plexi Glass",
+        "plexiglass",
+        "paint on",
+        "dropped",
+        "bowl",
+        "water spill",
+        "Vent near window",
+        "Street window East side of suite. It is drafty",
+        "Too Cold:",
+        "Too Hot",
+        "Light Out/Flickering/Cover",
+        "Douglass",
+        "not opening properly",
+        "shower",
+        [
+            "off",
+            "frame"
+        ],
+        [
+            "repair",
+            "sliding glass doors"
+        ]
+    ],
+    "Windows_Fogged": [
+        ["window", "fog"],
+    ["window", "cloudy"],
+    ["glass", "fog"],
+    ["glass", "cloudy"],
+    ["window", "not clear"],
+    ["glass", "not clear"],
+    ["window", "just dirty"],
+    ["window", "just dirty"],
+    ["glass", "tint is failing"],
+    ["glass", "tint is failing"]
+    ],
+    "Not_Windows_Fogged": [
+        ""
+    ],
+    "Window_Condensation": [
+        ["window", "condensation"],
+    ["window", "wet"],
+    ["glass", "condensation"],
+    ["glass", "wet"]
+    ],
+    "Not_Window_Condensation": [
+        ""
+    ],
+    "Washer_Dryer_Issues": [
+        "washer",
+        "dryer",
+        "wshr"
+    ],
+    "Not_Washer_Dryer_Issues": [
+        "dish",
+        "hair",
+        "filter",
+        "leak above"
+    ],
+    "Dishwasher_Issues": [
+        "dishwasher",
+    "dish washer",
+    "dsh wshr",
+    "Dish wsher",
+    ["DW", "not work"],
+    ["DW", "not clean"],
+    ["DW", "not dry"],
+    ["DW", "noisy"],
+    ["DW", "leak"]
+    ],
+    "Not_Dishwasher_Issues": [
+        "baseboard"
+    ]
+}
