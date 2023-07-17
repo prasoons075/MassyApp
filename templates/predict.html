@@ -29,12 +29,52 @@
         </div>
     </nav>
     <!-- <h1>Editable Excel Sheet with Pagination</h1> -->
-    <div class="table_view">
-        <table>
+    <div id="table-container"></div>
+
+    <script>
+        var container = document.getElementById('table-container');
+        var data = [
+            // Convert page_data['rows'] to a 2D array
+            {% for row in page_data['rows'] %}
+        [{% for item in row %}"{{item}}", {% endfor %}],
+        {% endfor %}
+        ];
+        var headers = [
+            // Convert page_data['headers'] to an array
+            {% for header in page_data['headers'] %}"{{header}}", {% endfor %}
+        ];
+        var hot = new Handsontable(container, {
+            data: data,
+            colHeaders: headers,
+            rowHeaders: true,
+            columnSorting: true,
+            readOnly: false,
+            filters: true,
+            dropdownMenu: true,
+            contextMenu: true,
+            licenseKey: 'non-commercial-and-evaluation'
+        });
+
+        // Determine the number of rows in your data
+        var numRows = data.length;
+
+        // Set a base row height (you may adjust this value based on your specific needs)
+        var baseRowHeight = 25;
+
+        // Calculate the table height based on the number of rows and the base row height
+        // Add some extra height for the column headers
+        var tableHeight = (numRows * baseRowHeight) + baseRowHeight;
+
+        // Update the table settings
+        hot.updateSettings({
+            height: tableHeight
+        });
+    </script>
+    <!--<table>
             <thead>
                 <tr>
                     {% for header in page_data['headers'] %}
-                    <th class="column-header{% if header not in DEFAULT_COLUMNS %} hidden{% endif %}">
+                    <th class="column-header">
                         {{header}}
                     </th>
                     {% endfor %}
@@ -44,59 +84,16 @@
                 {% for row in page_data['rows'] %}
                 <tr>
                     {% for index, item in enumerate(row) %}
-                    <td
-                        class="column-{{index+1}}{% if page_data['headers'][index] not in DEFAULT_COLUMNS %} hidden{% endif %}">
-                        <input type="text"
-                            class="editable-cell{% if page_data['headers'][index] not in DEFAULT_COLUMNS %} hidden{% endif %}"
-                            value="{{item}}" data-row="{{loop.index0 + page_data['num_of_pages'] * (page - 1)}}"
-                            data-col="{{index}}">
+                    <td class="column-{{index+1}}">
+                        <input type="text" class="editable-cell" value="{{item}}" 
+                               data-row="{{loop.index0 + page_data['num_of_pages'] * (page - 1)}}" 
+                               data-col="{{index}}">
                     </td>
                     {% endfor %}
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
-    <!-- <div id="table-container">
-
-        <script>
-            var container = document.getElementById('table-container');
-            var data = [
-                // Convert page_data['rows'] to a 2D array
-                {% for row in page_data['rows'] %}
-            [{% for item in row %}"{{item}}", {% endfor %}],
-            {% endfor %}
-        ];
-            var headers = [
-                // Convert page_data['headers'] to an array
-                {% for header in page_data['headers'] %}"{{header}}", {% endfor %}
-        ];
-            var hot = new Handsontable(container, {
-                data: data,
-                colHeaders: headers,
-                rowHeaders: true,
-                columnSorting: true,
-                readOnly: false,
-                filters: true,
-                dropdownMenu: true,
-                contextMenu: true,
-                licenseKey: 'non-commercial-and-evaluation'
-            });
-
-            // Determine the number of rows in your data
-            var numRows = data.length;
-
-            // Set a base row height (you may adjust this value based on your specific needs)
-            var baseRowHeight = 25;
-
-            // Calculate the table height based on the number of rows and the base row height
-            // Add some extra height for the column headers
-            var tableHeight = (numRows * baseRowHeight) + baseRowHeight;
-
-            // Update the table settings
-            hot.updateSettings({
-                height: tableHeight
-            });
-        </script>
     </div> -->
 
     <div class="pagination" style="display: flex; justify-content: space-between;">
@@ -151,6 +148,48 @@
                     'Washer/Dryer Issues', 'Dishwasher Issues'];
 
                 $(document).ready(function () {
+                    // Hide non-default columns
+                    // $('.column-header').each(function () {
+                    //     var header = $(this).text().trim();
+                    //     if (DEFAULT_COLUMNS.indexOf(header) == -1) {
+                    //         $(this).addClass('hidden');
+                    //         var colIndex = $(this).index();
+                    //         $('.column-' + (colIndex + 1)).addClass('hidden');
+                    //     }
+                    // });
+
+                    // // Show all columns button click handler
+                    // $('#show-all-btn').click(function () {
+                    //     $('.column-header').removeClass('hidden');
+                    //     $('.editable-cell').removeClass('hidden');
+
+                    //     // Unhide the table data cells
+                    //     $('td').each(function () {
+                    //         var colIndex = $(this).index();
+                    //         $('.column-' + (colIndex + 1)).removeClass('hidden');
+                    //     });
+
+                    //     $(this).hide();
+                    //     $('#show-default-btn').show();
+                    // });
+
+                    // // Show only default columns button click handler
+                    // $('#show-default-btn').click(function () {
+                    //     $('.column-header').each(function () {
+                    //         var header = $(this).text().trim();
+                    //         var colIndex = $(this).index();
+                    //         if (DEFAULT_COLUMNS.indexOf(header) == -1) {
+                    //             $(this).addClass('hidden');
+                    //             $('.column-' + (colIndex + 1)).addClass('hidden');
+                    //         } else {
+                    //             $(this).removeClass('hidden');
+                    //             $('.column-' + (colIndex + 1)).removeClass('hidden');
+                    //         }
+                    //     });
+
+                    //     $('#show-all-btn').show();
+                    //     $(this).hide();
+                    // });
 
                     // Editable cell focus event handler
                     $('.editable-cell').focus(function () {
@@ -201,19 +240,6 @@
                     }
 
                     // Export to Excel button click handler
-                    // $('#export-btn').click(async function () {
-                    //     var rows = hot.getData();  // get all data from the table
-                    //     var headers = hot.getColHeader();  // get all column headers
-
-                    //     rows.unshift(headers);  // add headers at the start of the rows array
-
-                    //     var ws = XLSX.utils.aoa_to_sheet(rows);
-                    //     var wb = XLSX.utils.book_new();
-                    //     XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-                    //     XLSX.writeFile(wb, "data.xlsx");
-                    // });
-
-                    // Export to Excel button click handler
                     $('#export-btn').click(async function () {
                         var rows = [];
                         var headers = [];
@@ -247,8 +273,6 @@
                         XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
                         XLSX.writeFile(wb, "data.xlsx");
                     });
-
-
 
                 });
             </script>

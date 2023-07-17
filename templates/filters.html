@@ -107,7 +107,7 @@
         <div class="navbar-center">
             <a href="http://localhost:8000/"><b>Home</a>
             <a href="http://localhost:8000/filters">Keywords</a>
-            <a href="http://localhost:8000/">Predict</b></a>
+            <a href="http://localhost:8000/predict">Predict</b></a>
         </div>
     </nav>
 
@@ -118,206 +118,246 @@
         <div class="container">
             <div class="box">
                 <label>Roofing Issues</label>
-                <input type="text" name="Roofing_Issues" value="{{ keywords['Roofing_Issues']|join(', ') }}"
+                <input type="text" name="Roofing_Issues"
+                    value="{% for keyword in keywords['Roofing_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}"
                     wrap="soft">
-                <input type="text" name="Not_Roofing_Issues" value="{{ keywords['Not_Roofing_Issues']|join(', ') }}">
+                <input type="text" name="Not_Roofing_Issues"
+                    value="{% for keyword in keywords['Not_Roofing_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+
+
+
 
             <div class="box">
                 <label>Plumbing Water Leak in Utility Closet</label>
-                <input type="text" name="Plumbing_Water_Leak_in_Utility_Closet"
-                    value="{{ keywords['Plumbing:_Water_Leak_in_Utility_Closet']|join(', ') }}">
-                <input type="text" name="Not_Plumbing_Water_Leak_in_Utility_Closet"
-                    value="{{ keywords['Not_Plumbing:_Water_Leak_in_Utility_Closet']|join(', ') }}">
+                <input type="text" name="Plumbing:_Water_Leak_in_Utility_Closet"
+                    value="{% for keyword in keywords['Plumbing:_Water_Leak_in_Utility_Closet'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Plumbing:_Water_Leak_in_Utility_Closet"
+                    value="{% for keyword in keywords['Not_Plumbing:_Water_Leak_in_Utility_Closet'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
 
             <div class="box">
                 <label>Piping Sanitary Not Draining</label>
                 <input type="text" name="Piping:_Sanitary_Not_Draining"
-                    value="{{ keywords['Piping:_Sanitary_Not_Draining']|join(', ') }}">
+                    value="{% for keyword in keywords['Piping:_Sanitary_Not_Draining'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Piping:_Sanitary_Not_Draining"
-                    value="{{ keywords['Not_Piping:_Sanitary_Not_Draining']|join(', ') }}">
-            </div>
+                    value="{% for keyword in keywords['Not_Piping:_Sanitary_Not_Draining'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                </div>
 
             <div class="box">
                 <label>Plumbing Fixture Leaks</label>
                 <input type="text" name="Plumbing_Fixture_Leaks"
-                    value="{{ keywords['Plumbing_Fixture_Leaks']|join(', ') }}">
+                    value="{% for keyword in keywords['Plumbing_Fixture_Leaks'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Plumbing_Fixture_Leaks"
-                    value="{{ keywords['Not_Plumbing_Fixture_Leaks']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Plumbing_Fixture_Leaks'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Piping Below Ground Sanitary</label>
-                <input type="text" name="Piping_Below_Ground_Sanitary"
-                    value="{{ keywords['Piping_Below_Ground_Sanitary']|join(', ') }}">
-                <input type="text" name="Not_Piping_Below_Ground_Sanitary"
-                    value="{{ keywords['Not_Piping_Below_Ground_Sanitary']|join(', ') }}">
+                <input type="text" name="Piping:_Below_Ground_Sanitary"
+                    value="{% for keyword in keywords['Piping:_Below_Ground_Sanitary'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Piping:_Below_Ground_Sanitary"
+                    value="{% for keyword in keywords['Not_Piping:_Below_Ground_Sanitary'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>Toilet Not Flushing</label>
-                <input type="text" name="Toilet_not_flushing" value="{{ keywords['Toilet_not_flushing']|join(', ') }}">
+                <input type="text" name="Toilet_not_flushing"
+                    value="{% for keyword in keywords['Toilet_not_flushing'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Toilet_not_flushing"
-                    value="{{ keywords['Not_Toilet_not_flushing']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Toilet_not_flushing'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>Plumbing Sewer Smell</label>
                 <input type="text" name="Plumbing:_Sewer_Smell"
-                    value="{{ keywords['Plumbing:_Sewer_Smell']|join(', ') }}">
+                    value="{% for keyword in keywords['Plumbing:_Sewer_Smell'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Plumbing:_Sewer_Smell"
-                    value="{{ keywords['Not_Plumbing:_Sewer_Smell']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Plumbing:_Sewer_Smell'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>Plumbing Water Leaks Behind Sheetrock</label>
                 <input type="text" name="Plumbing:_Water_Leaks_Behind_Sheetrock"
-                    value="{{ keywords['Plumbing:_Water_Leaks_Behind_Sheetrock']|join(', ') }}">
+                    value="{% for keyword in keywords['Plumbing:_Water_Leaks_Behind_Sheetrock'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Plumbing:_Water_Leaks_Behind_Sheetrock"
-                    value="{{ keywords['Not_Plumbing:_Water_Leaks_Behind_Sheetrock']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Plumbing:_Water_Leaks_Behind_Sheetrock'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Plumbing Leaking Water Heaters</label>
                 <input type="text" name="Plumbing_Leaking_Water_Heaters"
-                    value="{{ keywords['Plumbing_Leaking_Water_Heaters']|join(', ') }}">
+                    value="{% for keyword in keywords['Plumbing_Leaking_Water_Heaters'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Plumbing_Leaking_Water_Heaters"
-                    value="{{ keywords['Not_Plumbing_Leaking_Water_Heaters']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Plumbing_Leaking_Water_Heaters'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Plumbing Fixtures that are in Poor Condition</label>
-                <input type="text" name="Plumbing_Fixtures_that_are_in_poor_condition"
-                    value="{{ keywords['Plumbing_Fixtures_that_are_in_poor_condition']|join(', ') }}">
-                <input type="text" name="Not_Plumbing_Fixtures_that_are_in_poor_condition"
-                    value="{{ keywords['Not_Plumbing_Fixtures_that_are_in_poor_condition']|join(', ') }}">
+                <input type="text" name="Plumbing:_Fixtures_that_are_in_poor_condition"
+                    value="{% for keyword in keywords['Plumbing:_Fixtures_that_are_in_poor_condition'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Plumbing:_Fixtures_that_are_in_poor_condition"
+                    value="{% for keyword in keywords['Not_Plumbing:_Fixtures_that_are_in_poor_condition'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>No Hot Water</label>
-                <input type="text" name="No_hot_water" value="{{ keywords['No_hot_water']|join(', ') }}">
-                <input type="text" name="Not_No_hot_water" value="{{ keywords['Not_No_hot_water']|join(', ') }}">
+                <input type="text" name="No_hot_water"
+                    value="{% for keyword in keywords['No_hot_water'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_No_hot_water"
+                    value="{% for keyword in keywords['Not_No_hot_water'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Low or No Water Pressure</label>
                 <input type="text" name="Low_or_no_water_pressure"
-                    value="{{ keywords['Low_or_no_water_pressure']|join(', ') }}">
+                    value="{% for keyword in keywords['Low_or_no_water_pressure'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Low_or_no_water_pressure"
-                    value="{{ keywords['Not_Low_or_no_water_pressure']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Low_or_no_water_pressure'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
 
             <div class="box">
                 <label>Humidity Mold</label>
-                <input type="text" name="Humidity_mold" value="{{ keywords['Humidity_mold']|join(', ') }}">
-                <input type="text" name="Not_Humidity_mold" value="{{ keywords['Not_Humidity_mold']|join(', ') }}">
+                <input type="text" name="Humidity_mold" 
+                    value="{% for keyword in keywords['Humidity_mold'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Humidity_mold" 
+                    value="{% for keyword in keywords['Not_Humidity_mold'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Heating Not Working</label>
-                <input type="text" name="Heating_not_working" value="{{ keywords['Heating_not_working']|join(', ') }}">
+                <input type="text" name="Heating_not_working" 
+                    value="{% for keyword in keywords['Heating_not_working'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Heating_not_working"
-                    value="{{ keywords['Not_Heating_not_working']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Heating_not_working'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>AC Not Working Properly</label>
                 <input type="text" name="AC_not_working_properly"
-                    value="{{ keywords['AC_not_working_properly']|join(', ') }}">
+                    value="{% for keyword in keywords['AC_not_working_properly'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_AC_not_working_properly"
-                    value="{{ keywords['Not_AC_not_working_properly']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_AC_not_working_properly'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>Thermostat Issues</label>
-                <input type="text" name="Thermostat_Issues" value="{{ keywords['Thermostat_Issues']|join(', ') }}">
+                <input type="text" name="Thermostat_Issues"
+                    value="{% for keyword in keywords['Thermostat_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Thermostat_Issues"
-                    value="{{ keywords['Not_Thermostat_Issues']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Thermostat_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Smell in HVAC</label>
-                <input type="text" name="Smell_in_HVAC" value="{{ keywords['Smell_in_HVAC']|join(', ') }}">
-                <input type="text" name="Not_Smell_in_HVAC" value="{{ keywords['Not_Smell_in_HVAC']|join(', ') }}">
+                <input type="text" name="Smell_in_HVAC"
+                    value="{% for keyword in keywords['Smell_in_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Smell_in_HVAC"
+                    value="{% for keyword in keywords['Not_Smell_in_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Miscellaneous HVAC</label>
-                <input type="text" name="Miscellaneous_HVAC" value="{{ keywords['Miscellaneous_HVAC']|join(', ') }}">
+                <input type="text" name="Miscellaneous_HVAC"
+                    value="{% for keyword in keywords['Miscellaneous_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Miscellaneous_HVAC"
-                    value="{{ keywords['Not_Miscellaneous_HVAC']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Miscellaneous_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Fan Issues</label>
-                <input type="text" name="Fan_issues" value="{{ keywords['Fan_issues']|join(', ') }}">
-                <input type="text" name="Not_Fan_issues" value="{{ keywords['Not_Fan_issues']|join(', ') }}">
+                <input type="text" name="Fan_issues"
+                    value="{% for keyword in keywords['Fan_issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Fan_issues"
+                    value="{% for keyword in keywords['Not_Fan_issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>HVAC Drip or Leak</label>
-                <input type="text" name="HVAC_drip_or_leak" value="{{ keywords['HVAC_drip_or_leak']|join(', ') }}">
+                <input type="text" name="HVAC_drip_or_leak"
+                    value="{% for keyword in keywords['HVAC_drip_or_leak'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_HVAC_drip_or_leak"
-                    value="{{ keywords['Not_HVAC_drip_or_leak']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_HVAC_drip_or_leak'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
-
+            
             <div class="box">
                 <label>Unbalanced HVAC</label>
-                <input type="text" name="Unbalanced_HVAC" value="{{ keywords['Unbalanced_HVAC']|join(', ') }}">
-                <input type="text" name="Not_Unbalanced_HVAC" value="{{ keywords['Not_Unbalanced_HVAC']|join(', ') }}">
+                <input type="text" name="Unbalanced_HVAC"
+                    value="{% for keyword in keywords['Unbalanced_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Unbalanced_HVAC"
+                    value="{% for keyword in keywords['Not_Unbalanced_HVAC'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
 
             <div class="box">
                 <label>Inadequate HVAC Capacity</label>
                 <input type="text" name="Inadequate_HVAC_capacity"
-                    value="{{ keywords['Inadequate_HVAC_capacity']|join(', ') }}">
+                    value="{% for keyword in keywords['Inadequate_HVAC_capacity'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Inadequate_HVAC_capacity"
-                    value="{{ keywords['Not_Inadequate_HVAC_capacity']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Inadequate_HVAC_capacity'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Electrical</label>
-                <input type="text" name="Electrical" value="{{ keywords['Electrical']|join(', ') }}">
-                <input type="text" name="Not_Electrical" value="{{ keywords['Not_Electrical']|join(', ') }}">
+                <input type="text" name="Electrical"
+                    value="{% for keyword in keywords['Electrical'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Electrical"
+                    value="{% for keyword in keywords['Not_Electrical'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Fire</label>
-                <input type="text" name="Fire" value="{{ keywords['Fire']|join(', ') }}">
-                <input type="text" name="Not_Fire" value="{{ keywords['Not_Fire']|join(', ') }}">
+                <input type="text" name="Fire"
+                    value="{% for keyword in keywords['Fire'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Fire"
+                    value="{% for keyword in keywords['Not_Fire'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Window Issues</label>
-                <input type="text" name="Window_issues" value="{{ keywords['Window_issues']|join(', ') }}">
-                <input type="text" name="Not_Window_issues" value="{{ keywords['Not_Window_issues']|join(', ') }}">
+                <input type="text" name="Window_issues"
+                    value="{% for keyword in keywords['Window_issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Window_issues"
+                    value="{% for keyword in keywords['Not_Window_issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Window Leak</label>
-                <input type="text" name="Window_Leak" value="{{ keywords['Window_Leak']|join(', ') }}">
-                <input type="text" name="Not_Window_Leak" value="{{ keywords['Not_Window_Leak']|join(', ') }}">
+                <input type="text" name="Window_Leak"
+                    value="{% for keyword in keywords['Window_Leak'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Window_Leak"
+                    value="{% for keyword in keywords['Not_Window_Leak'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Windows Fogged</label>
-                <input type="text" name="Windows_Fogged" value="{{ keywords['Windows_Fogged']|join(', ') }}">
-                <input type="text" name="Not_Windows_Fogged" value="{{ keywords['Not_Windows_Fogged']|join(', ') }}">
+                <input type="text" name="Windows_Fogged"
+                    value="{% for keyword in keywords['Windows_Fogged'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
+                <input type="text" name="Not_Windows_Fogged"
+                    value="{% for keyword in keywords['Not_Windows_Fogged'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Window Condensation</label>
-                <input type="text" name="Window_Condensation" value="{{ keywords['Window_Condensation']|join(', ') }}">
+                <input type="text" name="Window_Condensation"
+                    value="{% for keyword in keywords['Window_Condensation'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Window_Condensation"
-                    value="{{ keywords['Not_Window_Condensation']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Window_Condensation'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Washer Dryer Issues</label>
-                <input type="text" name="Washer_Dryer_Issues" value="{{ keywords['Washer_Dryer_Issues']|join(', ') }}">
+                <input type="text" name="Washer_Dryer_Issues"
+                    value="{% for keyword in keywords['Washer_Dryer_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Washer_Dryer_Issues"
-                    value="{{ keywords['Not_Washer_Dryer_Issues']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Washer_Dryer_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
             <div class="box">
                 <label>Dishwasher Issues</label>
-                <input type="text" name="Dishwasher_Issues" value="{{ keywords['Dishwasher_Issues']|join(', ') }}">
+                <input type="text" name="Dishwasher_Issues"
+                    value="{% for keyword in keywords['Dishwasher_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
                 <input type="text" name="Not_Dishwasher_Issues"
-                    value="{{ keywords['Not_Dishwasher_Issues']|join(', ') }}">
+                    value="{% for keyword in keywords['Not_Dishwasher_Issues'] %}{% if keyword is string and not keyword.startswith('[') %}'{{ keyword }}'{% else %}{{ keyword }}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}">
             </div>
+            
             <div class="box">
                 <input type="submit" value="Save">
             </div>

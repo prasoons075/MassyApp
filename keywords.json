@@ -234,20 +234,20 @@
         "clog",
         "stuck on flush mode",
         "unclog",
-        "doesn't flush",
+        "doesnt flush",
         "water heater",
         "not drain",
         "overflow",
         "flushing non stop",
         "not stop flushing",
-        "flush doesn't stop",
+        "flush doesnt stop",
         "constantly flushing",
         "keeps flushing",
         "continues the flush",
         "continuously running",
         "in the corridor",
         "massage area",
-        "didn't stop running",
+        "didnt stop running",
         "please replace filter",
         "urinal is not working properly",
         "faucets spray water",
@@ -444,7 +444,7 @@
         ],
         [
             "flush",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "handle",
@@ -766,20 +766,20 @@
         "clog",
         "stuck on flush mode",
         "unclog",
-        "doesn't flush",
+        "doesnt flush",
         "water heater",
         "not drain",
         "overflow",
         "flushing non stop",
         "not stop flushing",
-        "flush doesn't stop",
+        "flush doesnt stop",
         "constantly flushing",
         "keeps flushing",
         "continues the flush",
         "continuously running",
         "in the corridor",
         "massage area",
-        "didn't stop running",
+        "didnt stop running",
         "please replace filter",
         "urinal is not working properly",
         "faucets spray water",
@@ -976,7 +976,7 @@
         ],
         [
             "flush",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "handle",
@@ -1115,23 +1115,23 @@
             "running water issue"
         ]
     ],
-    "Piping_Below_Ground_Sanitary": [
+    "Piping:_Below_Ground_Sanitary": [
         ""
     ],
-    "Not_Piping_Below_Ground_Sanitary": [
+    "Not_Piping:_Below_Ground_Sanitary": [
         ""
     ],
     "Toilet_not_flushing": [
         "Toilet runs continually",
         "toilet keeps running",
         "gst bthrm tolt kps run",
-        "Toilet won't stop running",
+        "Toilet wont stop running",
         "toilet won t flush",
         "flushing system",
-        "toilet doesn't not flush",
+        "toilet doesnt not flush",
         "runs continually",
-        "toilet won't flush",
-        "Toilet doesn't flush",
+        "toilet wont flush",
+        "Toilet doesnt flush",
         [
             "Toilet",
             "not fill"
@@ -1218,7 +1218,7 @@
         ],
         [
             "stall",
-            "isn't flushing properly"
+            "isnt flushing properly"
         ],
         [
             "toilet",
@@ -1561,14 +1561,14 @@
     "Not_Plumbing_Leaking_Water_Heaters": [
         ""
     ],
-    "Plumbing_Fixtures_that_are_in_poor_condition": [
+    "Plumbing:_Fixtures_that_are_in_poor_condition": [
         "loose",
         "broken",
         "broke",
         "missing",
         "come off",
         "came off",
-        "doesn't spray",
+        "doesnt spray",
         "does not spray",
         "not spray",
         "not stable",
@@ -1632,7 +1632,7 @@
             "rust"
         ]
     ],
-    "Not_Plumbing_Fixtures_that_are_in_poor_condition": [
+    "Not_Plumbing:_Fixtures_that_are_in_poor_condition": [
         "thermostat",
         "light",
         "outlet",
@@ -1673,7 +1673,7 @@
         "bbq",
         "broken chain",
         "broken crank",
-        "I'maker",
+        "Imaker",
         "ice maker",
         "porch lock",
         "hinge",
@@ -1713,7 +1713,7 @@
     ],
     "No_hot_water": [
         "hot water",
-        "water doesn't heat up",
+        "water doesnt heat up",
         "No ht wtr",
         "no hot wtr",
         "nt ht wtr",
@@ -1723,7 +1723,7 @@
         "only cold water",
         "no hot water coming out",
         "no hot water",
-        "Water doesn't get hot",
+        "Water doesnt get hot",
         "Cold In Shower",
         "turn up water heater",
         "water not getting hot",
@@ -1886,11 +1886,11 @@
         ],
         [
             "heater",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "heater",
-            "isn't working"
+            "isnt working"
         ],
         [
             "heater",
@@ -1902,11 +1902,11 @@
         ],
         [
             "heat",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "heat",
-            "isn't working"
+            "isnt working"
         ],
         [
             "heat",
@@ -1934,7 +1934,7 @@
         ],
         [
             "heat",
-            "hasn't"
+            "hasnt"
         ],
         [
             "heat",
@@ -1954,7 +1954,7 @@
         ],
         [
             "heat",
-            "doesn't"
+            "doesnt"
         ],
         [
             "heat",
@@ -1970,7 +1970,7 @@
         ],
         [
             "heating",
-            "doesn't"
+            "doesnt"
         ],
         [
             "heating",
@@ -1985,7 +1985,7 @@
             "heat"
         ],
         [
-            "doesn't",
+            "doesnt",
             "heat"
         ],
         [
@@ -2046,7 +2046,7 @@
         "oven",
         "Air conditioner:",
         "AC Stopped working",
-        "Air conditioning isn't getting cold",
+        "Air conditioning isnt getting cold",
         "water",
         "plumbing",
         "sink",
@@ -2059,146 +2059,146 @@
         "HEATING & COOLING: -",
         "AC went out",
         "A/C went out",
-        "A/C isn't turning on",
+        "A/C isnt turning on",
         "Air conditioner stopped",
-        "doesn't cool",
-        "doesn't get cool",
+        "doesnt cool",
+        "doesnt get cool",
         "A/C has been out",
         "A/c is out",
         "A/C is completely out",
         "request filter vent",
         "cooling needs repair",
-        "cooling won't work",
+        "cooling wont work",
         "cooling not work",
-        "cooling doesn't work",
+        "cooling doesnt work",
         "cooling doesn t work",
         "cooling stopped workin",
-        "cooling doesn’t seem to be working",
+        "cooling doesn\u2019t seem to be working",
         "cooling not turning on",
-        "cooling won't turn on",
+        "cooling wont turn on",
         "cooling not been working",
         "cooling not really working",
         "cooling not putting out cold air",
         "cooling barely works",
         "cooling replace",
-        "cooling isn't work",
+        "cooling isnt work",
         "cooling no",
         "cooling does not work",
         "cooling stops working",
         "cooling stop working",
         "cooling noise",
         "cooling isnt working",
-        "cooling isn't blowing",
+        "cooling isnt blowing",
         "HVAC needs repair",
-        "HVAC won't work",
+        "HVAC wont work",
         "HVAC not work",
-        "HVAC doesn't work",
+        "HVAC doesnt work",
         "HVAC doesn t work",
         "HVAC stopped workin",
-        "HVAC doesn’t seem to be working",
+        "HVAC doesn\u2019t seem to be working",
         "HVAC not turning on",
-        "HVAC won't turn on",
+        "HVAC wont turn on",
         "HVAC not been working",
         "HVAC not really working",
         "HVAC not putting out cold air",
         "HVAC barely works",
         "HVAC replace",
-        "HVAC isn't work",
+        "HVAC isnt work",
         "HVAC no",
         "HVAC does not work",
         "HVAC stops working",
         "HVAC stop working",
         "HVAC noise",
         "HVAC isnt working",
-        "HVAC isn't blowing",
+        "HVAC isnt blowing",
         "AC needs repair",
-        "AC won't work",
+        "AC wont work",
         "AC not work",
-        "AC doesn't work",
+        "AC doesnt work",
         "AC doesn t work",
         "AC stopped workin",
-        "AC doesn’t seem to be working",
+        "AC doesn\u2019t seem to be working",
         "AC not turning on",
-        "AC won't turn on",
+        "AC wont turn on",
         "AC not been working",
         "AC not really working",
         "AC not putting out cold air",
         "AC barely works",
         "AC replace",
-        "AC isn't work",
+        "AC isnt work",
         "AC no",
         "AC does not work",
         "AC stops working",
         "AC stop working",
         "AC noise",
         "AC isnt working",
-        "AC isn't blowing",
+        "AC isnt blowing",
         "A/C needs repair",
-        "A/C won't work",
+        "A/C wont work",
         "A/C not work",
-        "A/C doesn't work",
+        "A/C doesnt work",
         "A/C doesn t work",
         "A/C stopped workin",
-        "A/C doesn’t seem to be working",
+        "A/C doesn\u2019t seem to be working",
         "A/C not turning on",
-        "A/C won't turn on",
+        "A/C wont turn on",
         "A/C not been working",
         "A/C not really working",
         "A/C not putting out cold air",
         "A/C barely works",
         "A/C replace",
-        "A/C isn't work",
+        "A/C isnt work",
         "A/C no",
         "A/C does not work",
         "A/C stops working",
         "A/C stop working",
         "A/C noise",
         "A/C isnt working",
-        "A/C isn't blowing",
+        "A/C isnt blowing",
         "conditioning needs repair",
-        "conditioning won't work",
+        "conditioning wont work",
         "conditioning not work",
-        "conditioning doesn't work",
+        "conditioning doesnt work",
         "conditioning doesn t work",
         "conditioning stopped workin",
-        "conditioning doesn’t seem to be working",
+        "conditioning doesn\u2019t seem to be working",
         "conditioning not turning on",
-        "conditioning won't turn on",
+        "conditioning wont turn on",
         "conditioning not been working",
         "conditioning not really working",
         "conditioning not putting out cold air",
         "conditioning barely works",
         "conditioning replace",
-        "conditioning isn't work",
+        "conditioning isnt work",
         "conditioning no",
         "conditioning does not work",
         "conditioning stops working",
         "conditioning stop working",
         "conditioning noise",
         "conditioning isnt working",
-        "conditioning isn't blowing",
+        "conditioning isnt blowing",
         "conditioner needs repair",
-        "conditioner won't work",
+        "conditioner wont work",
         "conditioner not work",
-        "conditioner doesn't work",
+        "conditioner doesnt work",
         "conditioner doesn t work",
         "conditioner stopped workin",
-        "conditioner doesn’t seem to be working",
+        "conditioner doesn\u2019t seem to be working",
         "conditioner not turning on",
-        "conditioner won't turn on",
+        "conditioner wont turn on",
         "conditioner not been working",
         "conditioner not really working",
         "conditioner not putting out cold air",
         "conditioner barely works",
         "conditioner replace",
-        "conditioner isn't work",
+        "conditioner isnt work",
         "conditioner no",
         "conditioner does not work",
         "conditioner stops working",
         "conditioner stop working",
         "conditioner noise",
         "conditioner isnt working",
-        "conditioner isn't blowing",
+        "conditioner isnt blowing",
         "A/C does not cool",
         "attic fan nois",
         "Other - Please see comments",
@@ -2267,15 +2267,15 @@
         ],
         [
             "air",
-            "isn't cooling"
+            "isnt cooling"
         ],
         [
             "AC",
-            "isn't cooling"
+            "isnt cooling"
         ],
         [
             "A/C",
-            "isn't cooling"
+            "isnt cooling"
         ],
         [
             "air",
@@ -2327,7 +2327,7 @@
         "AC is not working",
         "does not cool",
         "not cooling effectively",
-        "doesn't have enough power",
+        "doesnt have enough power",
         "not blowing cold air",
         "not blowing out very strong",
         "doesnt cool lower",
@@ -2342,7 +2342,7 @@
         "AC is blowing hot air",
         "AC not cooling",
         "No A.C.",
-        "AC isn't working",
+        "AC isnt working",
         "AC broke",
         "AC is broken",
         "A.C.",
@@ -2372,10 +2372,10 @@
         "ac nt coon prply",
         "Ac unit is leaking",
         "air filter",
-        "Air conditioner doesn't turn on",
+        "Air conditioner doesnt turn on",
         "Air Conditioner is blowing hot air",
         "Air conditioner is frozen over",
-        "Air conditioner isn't cooling prop",
+        "Air conditioner isnt cooling prop",
         "Replace ac filter",
         "replace a/c filter",
         "AC keeps going out",
@@ -2393,22 +2393,22 @@
         "A/C-other problem",
         "HEATING & COOLING: -",
         "Air conditioner stopped",
-        "doesn't get cool",
+        "doesnt get cool",
         "A/C has been out",
         "A/c is out",
         "A/C is completely out",
         "issue with AC",
         "A/C does not cool",
-        "AC doesn't work",
-        "Doesn't cool down",
-        "Doesn't cool",
+        "AC doesnt work",
+        "Doesnt cool down",
+        "Doesnt cool",
         [
             "HVAC",
             "needs repair"
         ],
         [
             "HVAC",
-            "won't work"
+            "wont work"
         ],
         [
             "HVAC",
@@ -2416,7 +2416,7 @@
         ],
         [
             "HVAC",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "HVAC",
@@ -2428,7 +2428,7 @@
         ],
         [
             "HVAC",
-            "doesn’t seem to be working"
+            "doesn\u2019t seem to be working"
         ],
         [
             "HVAC",
@@ -2436,7 +2436,7 @@
         ],
         [
             "HVAC",
-            "won't turn on"
+            "wont turn on"
         ],
         [
             "HVAC",
@@ -2460,7 +2460,7 @@
         ],
         [
             "HVAC",
-            "isn't work"
+            "isnt work"
         ],
         [
             "HVAC",
@@ -2488,7 +2488,7 @@
         ],
         [
             "HVAC",
-            "isn't blowing cold air"
+            "isnt blowing cold air"
         ],
         [
             "HVAC",
@@ -2500,7 +2500,7 @@
         ],
         [
             "AC",
-            "won't work"
+            "wont work"
         ],
         [
             "AC",
@@ -2508,7 +2508,7 @@
         ],
         [
             "AC",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "AC",
@@ -2520,7 +2520,7 @@
         ],
         [
             "AC",
-            "doesn’t seem to be working"
+            "doesn\u2019t seem to be working"
         ],
         [
             "AC",
@@ -2528,7 +2528,7 @@
         ],
         [
             "AC",
-            "won't turn on"
+            "wont turn on"
         ],
         [
             "AC",
@@ -2552,7 +2552,7 @@
         ],
         [
             "AC",
-            "isn't work"
+            "isnt work"
         ],
         [
             "AC",
@@ -2580,7 +2580,7 @@
         ],
         [
             "AC",
-            "isn't blowing"
+            "isnt blowing"
         ],
         [
             "AC",
@@ -2592,7 +2592,7 @@
         ],
         [
             "A/C",
-            "won't work"
+            "wont work"
         ],
         [
             "A/C",
@@ -2600,7 +2600,7 @@
         ],
         [
             "A/C",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "A/C",
@@ -2612,7 +2612,7 @@
         ],
         [
             "A/C",
-            "doesn’t seem to be working"
+            "doesn\u2019t seem to be working"
         ],
         [
             "A/C",
@@ -2620,7 +2620,7 @@
         ],
         [
             "A/C",
-            "won't turn on"
+            "wont turn on"
         ],
         [
             "A/C",
@@ -2644,7 +2644,7 @@
         ],
         [
             "A/C",
-            "isn't work"
+            "isnt work"
         ],
         [
             "A/C",
@@ -2672,7 +2672,7 @@
         ],
         [
             "A/C",
-            "isn't blowing"
+            "isnt blowing"
         ],
         [
             "A/C",
@@ -2684,7 +2684,7 @@
         ],
         [
             "cooling",
-            "won't work"
+            "wont work"
         ],
         [
             "cooling",
@@ -2692,7 +2692,7 @@
         ],
         [
             "cooling",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "cooling",
@@ -2704,7 +2704,7 @@
         ],
         [
             "cooling",
-            "doesn’t seem to be working"
+            "doesn\u2019t seem to be working"
         ],
         [
             "cooling",
@@ -2712,7 +2712,7 @@
         ],
         [
             "cooling",
-            "won't turn on"
+            "wont turn on"
         ],
         [
             "cooling",
@@ -2736,7 +2736,7 @@
         ],
         [
             "cooling",
-            "isn't work"
+            "isnt work"
         ],
         [
             "cooling",
@@ -2764,7 +2764,7 @@
         ],
         [
             "cooling",
-            "isn't blowing"
+            "isnt blowing"
         ],
         [
             "cooling",
@@ -2776,7 +2776,7 @@
         ],
         [
             "air",
-            "won't work"
+            "wont work"
         ],
         [
             "air",
@@ -2784,7 +2784,7 @@
         ],
         [
             "air",
-            "doesn't work"
+            "doesnt work"
         ],
         [
             "air",
@@ -2796,7 +2796,7 @@
         ],
         [
             "air",
-            "doesn’t seem to be working"
+            "doesn\u2019t seem to be working"
         ],
         [
             "air",
@@ -2804,7 +2804,7 @@
         ],
         [
             "air",
-            "won't turn on"
+            "wont turn on"
         ],
         [
             "air",
@@ -2828,7 +2828,7 @@
         ],
         [
             "air",
-            "isn't work"
+            "isnt work"
         ],
         [
             "air",
@@ -2856,7 +2856,7 @@
         ],
         [
             "air",
-            "isn't blowing"
+            "isnt blowing"
         ],
         [
             "air",
@@ -2872,7 +2872,7 @@
         ],
         [
             "air",
-            "isn't working"
+            "isnt working"
         ],
         [
             "airer",
@@ -2884,11 +2884,11 @@
         ],
         [
             "AC",
-            "isn't working"
+            "isnt working"
         ],
         [
             "AC",
-            "hasn’t been cooling"
+            "hasn\u2019t been cooling"
         ],
         [
             "airing",
@@ -2928,7 +2928,7 @@
         ],
         [
             "AC",
-            "isn't cooling"
+            "isnt cooling"
         ],
         [
             "AC",
@@ -2952,7 +2952,7 @@
         ],
         [
             "AC",
-            "isn't cooling"
+            "isnt cooling"
         ],
         [
             "AC",
@@ -3008,7 +3008,7 @@
         ],
         [
             "AC",
-            "won't cool"
+            "wont cool"
         ],
         [
             "AC",
@@ -3020,7 +3020,7 @@
         ],
         [
             "Air conditioning",
-            "isn't turn"
+            "isnt turn"
         ],
         [
             "AC",
@@ -3028,7 +3028,7 @@
         ],
         [
             "AC",
-            "isn't functioning"
+            "isnt functioning"
         ],
         [
             "HVAC",
@@ -3234,7 +3234,7 @@
         "door lock",
         "hallway floors",
         "Garbage Disposal",
-        "heat isn't working",
+        "heat isnt working",
         "no heat",
         "door",
         "A/C filt",
@@ -3275,7 +3275,7 @@
         "No matter how high we turn up the temperature",
         "blows out only cold air",
         "furnace",
-        "doesn't get hotter",
+        "doesnt get hotter",
         "dust",
         "computers",
         "heater is",
@@ -3305,18 +3305,18 @@
         "heat does not work",
         "heat broke",
         "heating does not",
-        "heating doesn't",
+        "heating doesnt",
         "heating doesnt",
         "heating doesn t",
         "heat does not",
-        "heat doesn't",
+        "heat doesnt",
         "heat doesnt",
         "heat doesn t",
         "thermostat does not",
-        "thermostat doesn't",
+        "thermostat doesnt",
         "thermostat not turning on",
-        "heat in my apartment isn't",
-        "don't think my heat is working",
+        "heat in my apartment isnt",
+        "dont think my heat is working",
         "OT - HVAC",
         "ice maker",
         "fridge",
@@ -3495,11 +3495,11 @@
             "not connecting to power"
         ],
         [
-            "It's very cold",
+            "Its very cold",
             "in my apartment"
         ],
         [
-            "It's very cold",
+            "Its very cold",
             "in my apartment"
         ],
         [
@@ -3612,7 +3612,7 @@
             "cooling"
         ],
         [
-            "isn't",
+            "isnt",
             "cooling"
         ],
         [
@@ -4005,7 +4005,7 @@
         ],
         [
             "leak",
-            "men's"
+            "mens"
         ],
         [
             "leak",
@@ -4293,25 +4293,67 @@
         ]
     ],
     "Windows_Fogged": [
-        ["window", "fog"],
-    ["window", "cloudy"],
-    ["glass", "fog"],
-    ["glass", "cloudy"],
-    ["window", "not clear"],
-    ["glass", "not clear"],
-    ["window", "just dirty"],
-    ["window", "just dirty"],
-    ["glass", "tint is failing"],
-    ["glass", "tint is failing"]
+        [
+            "window",
+            "fog"
+        ],
+        [
+            "window",
+            "cloudy"
+        ],
+        [
+            "glass",
+            "fog"
+        ],
+        [
+            "glass",
+            "cloudy"
+        ],
+        [
+            "window",
+            "not clear"
+        ],
+        [
+            "glass",
+            "not clear"
+        ],
+        [
+            "window",
+            "just dirty"
+        ],
+        [
+            "window",
+            "just dirty"
+        ],
+        [
+            "glass",
+            "tint is failing"
+        ],
+        [
+            "glass",
+            "tint is failing"
+        ]
     ],
     "Not_Windows_Fogged": [
         ""
     ],
     "Window_Condensation": [
-        ["window", "condensation"],
-    ["window", "wet"],
-    ["glass", "condensation"],
-    ["glass", "wet"]
+        [
+            "window",
+            "condensation"
+        ],
+        [
+            "window",
+            "wet"
+        ],
+        [
+            "glass",
+            "condensation"
+        ],
+        [
+            "glass",
+            "wet"
+        ]
     ],
     "Not_Window_Condensation": [
         ""
@@ -4329,14 +4371,29 @@
     ],
     "Dishwasher_Issues": [
         "dishwasher",
-    "dish washer",
-    "dsh wshr",
-    "Dish wsher",
-    ["DW", "not work"],
-    ["DW", "not clean"],
-    ["DW", "not dry"],
-    ["DW", "noisy"],
-    ["DW", "leak"]
+        "dish washer",
+        "dsh wshr",
+        "Dish wsher",
+        [
+            "DW",
+            "not work"
+        ],
+        [
+            "DW",
+            "not clean"
+        ],
+        [
+            "DW",
+            "not dry"
+        ],
+        [
+            "DW",
+            "noisy"
+        ],
+        [
+            "DW",
+            "leak"
+        ]
     ],
     "Not_Dishwasher_Issues": [
         "baseboard"
