@@ -23,9 +23,9 @@
 <body>
     <nav>
         <div class="navbar-center">
-            <a href="http://localhost:8000/"><b>Home</a>
-            <a href="http://localhost:8000/filters">Keywords</a>
-            <a href="http://localhost:8000/predict">Predict</b></a>
+            <a href="http://localhost:8000/"><b>Rules Engine - Predict</a>
+            <a href="http://localhost:8000/filters">Rules Engine - Keywords</a>
+            <a href="http://localhost:8000/predict">AI Engine - Predict</b></a>
         </div>
     </nav>
     <!-- <h1>Editable Excel Sheet with Pagination</h1> -->
@@ -70,7 +70,8 @@
             height: tableHeight
         });
     </script> -->
-    <table>
+    <div class="table_view">
+        <table>
             <thead>
                 <tr>
                     {% for header in page_data['headers'] %}
@@ -85,15 +86,15 @@
                 <tr>
                     {% for index, item in enumerate(row) %}
                     <td class="column-{{index+1}}">
-                        <input type="text" class="editable-cell" value="{{item}}" 
-                               data-row="{{loop.index0 + page_data['num_of_pages'] * (page - 1)}}" 
-                               data-col="{{index}}">
+                        <input type="text" class="editable-cell" value="{{item}}"
+                            data-row="{{loop.index0 + page_data['num_of_pages'] * (page - 1)}}" data-col="{{index}}">
                     </td>
                     {% endfor %}
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
+    </div>
     </div>
 
     <div class="pagination" style="display: flex; justify-content: space-between;">
@@ -270,8 +271,16 @@
 
                         var ws = XLSX.utils.aoa_to_sheet(rows);
                         var wb = XLSX.utils.book_new();
-                        XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-                        XLSX.writeFile(wb, "data.xlsx");
+
+                        XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+
+                        // Generate a unique timestamp for the file name
+                        var timestamp = new Date().toISOString().replace(/[-:.]/g, '');
+
+                        // Add the timestamp to the file name
+                        var fileName = 'data_' + timestamp + '.xlsx';
+
+                        XLSX.writeFile(wb, fileName);
                     });
 
                 });

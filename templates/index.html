@@ -23,9 +23,9 @@
 <body>
     <nav>
         <div class="navbar-center">
-            <a href="http://localhost:8000/"><b>Home</a>
-            <a href="http://localhost:8000/filters">Keywords</a>
-            <a href="http://localhost:8000/predict">Predict</b></a>
+            <a href="http://localhost:8000/"><b>Rules Engine - Predict</a>
+            <a href="http://localhost:8000/filters">Rules Engine - Keywords</a>
+            <a href="http://localhost:8000/predict">AI Engine - Predict</b></a>
         </div>
     </nav>
     <!-- <h1>Editable Excel Sheet with Pagination</h1> -->
@@ -56,7 +56,7 @@
                 {% endfor %}
             </tbody>
         </table>
-    <!-- <div id="table-container">
+        <!-- <div id="table-container">
 
         <script>
             var container = document.getElementById('table-container');
@@ -99,159 +99,166 @@
         </script>
     </div> -->
 
-    <div class="pagination" style="display: flex; justify-content: space-between;">
-        <div class="page-info" style="margin-right: 10px;"> |Page {{page}}/{{page_data['num_of_pages']}} |
-            <a class="prev-btn" href="/?page={{page-1}}">&laquo; Prev</a>
-            <a class="next-btn" href="/?page={{page+1}}">Next &raquo;</a>
+        <div class="pagination" style="display: flex; justify-content: space-between;">
+            <div class="page-info" style="margin-right: 10px;"> |Page {{page}}/{{page_data['num_of_pages']}} |
+                <a class="prev-btn" href="/?page={{page-1}}">&laquo; Prev</a>
+                <a class="next-btn" href="/?page={{page+1}}">Next &raquo;</a>
+            </div>
+            <div class="page-jump">
+                Go to page: <input type="text" id="page-input" value="{{page}}">
+                <button id="go-btn">Go</button>
+            </div>
         </div>
-        <div class="page-jump">
-            Go to page: <input type="text" id="page-input" value="{{page}}">
-            <button id="go-btn">Go</button>
-        </div>
-    </div>
 
 
 
 
-    <div class="row" style="display: flex; justify-content: space-between;">
-        <!-- <div class="show-all-btn-container" style="text-align: left;">
+        <div class="row" style="display: flex; justify-content: space-between;">
+            <!-- <div class="show-all-btn-container" style="text-align: left;">
             <button id="show-all-btn">Show All Columns</button>
             <button id="show-default-btn" style="display: none;">Show Only Default Columns</button>
         </div> -->
-        <div class="export-btn-container" style="text-align: right;">
-            <button id="export-btn">Export to Excel</button>
-        </div>
-    </div>
-
-
-    <form method="POST">
-        <div class="container">
-            <div class="box">
-                <input type="submit" value="Run Rules Engine">
+            <div class="export-btn-container" style="text-align: right;">
+                <button id="export-btn">Export to Excel</button>
             </div>
-            <script>
+        </div>
 
 
-                var DEFAULT_COLUMNS = ['Sa', 'ProjectName', 'Year of Assessment (normally this year)',
-                    'Year Built', '# of Units', '# of floors (from filenam',
-                    'Project Number', 'Date', 'Description', 'Bldg',
-                    'Included in cells to the right?', 'Trigger count ',
-                    'Exclude from all? (1-Yes,0=No)', 'Chart Wording:', 'Roofing Issues',
-                    'Plumbing: Water Leak in Utility Closet',
-                    'Piping: Sanitary Not Draining', 'Plumbing Fixture Leaks',
-                    'Piping: Below Ground Sanitary', 'Toilet not flushing',
-                    'Plumbing: Sewer Smell', 'Plumbing: Water Leaks Behind Sheetrock',
-                    'Plumbing: Leaking Water Heaters',
-                    'Plumbing: Fixtures that are in poor condition', 'No hot water',
-                    'Low or no water pressure', 'Humidity/mold', 'Heating not working',
-                    'AC not working properly', 'Thermostat Issues', 'Smell in HVAC',
-                    'Miscellaneous HVAC', 'Fan issues', 'HVAC drip or leak',
-                    'Unbalanced HVAC', 'Inadequate HVAC capacity', 'Electrical', 'Fire',
-                    'Window issues', 'Window Leak', 'Windows Fogged', 'Window Condensation',
-                    'Washer/Dryer Issues', 'Dishwasher Issues'];
+        <form method="POST">
+            <div class="container">
+                <div class="box">
+                    <input type="submit" value="Run Rules Engine">
+                </div>
+                <script>
 
-                $(document).ready(function () {
 
-                    // Editable cell focus event handler
-                    $('.editable-cell').focus(function () {
-                        $(this).data('initial-value', $(this).val());
-                    });
+                    var DEFAULT_COLUMNS = ['Sa', 'ProjectName', 'Year of Assessment (normally this year)',
+                        'Year Built', '# of Units', '# of floors (from filenam',
+                        'Project Number', 'Date', 'Description', 'Bldg',
+                        'Included in cells to the right?', 'Trigger count ',
+                        'Exclude from all? (1-Yes,0=No)', 'Chart Wording:', 'Roofing Issues',
+                        'Plumbing: Water Leak in Utility Closet',
+                        'Piping: Sanitary Not Draining', 'Plumbing Fixture Leaks',
+                        'Piping: Below Ground Sanitary', 'Toilet not flushing',
+                        'Plumbing: Sewer Smell', 'Plumbing: Water Leaks Behind Sheetrock',
+                        'Plumbing: Leaking Water Heaters',
+                        'Plumbing: Fixtures that are in poor condition', 'No hot water',
+                        'Low or no water pressure', 'Humidity/mold', 'Heating not working',
+                        'AC not working properly', 'Thermostat Issues', 'Smell in HVAC',
+                        'Miscellaneous HVAC', 'Fan issues', 'HVAC drip or leak',
+                        'Unbalanced HVAC', 'Inadequate HVAC capacity', 'Electrical', 'Fire',
+                        'Window issues', 'Window Leak', 'Windows Fogged', 'Window Condensation',
+                        'Washer/Dryer Issues', 'Dishwasher Issues'];
 
-                    // Editable cell blur event handler
-                    $('.editable-cell').blur(function () {
-                        var $cell = $(this);
-                        var row = $cell.data('row');
-                        var col = $cell.data('col');
-                        var value = $cell.val();
-                        var initialValue = $cell.data('initial-value');
+                    $(document).ready(function () {
 
-                        if (value != initialValue) {
-                            $.ajax({
-                                type: 'POST',
-                                url: '/update_cell',
-                                data: JSON.stringify({
-                                    'row': row,
-                                    'col': col,
-                                    'value': value
-                                }),
-                                contentType: 'application/json;charset=UTF-8',
-                                success: function (response) {
-                                    console.log(response);
-                                },
-                                error: function (error) {
-                                    console.log(error);
-                                }
-                            });
-                        }
-                    });
-
-                    // Page jump button click handler
-                    $('#go-btn').click(function () {
-                        var page = parseInt($('#page-input').val());
-                        var maxPage = parseInt($('.page-info').text().split('/')[1]);
-                        if (page >= 1 && page <= maxPage) {
-                            window.location.href = '/?page=' + page;
-                        } else {
-                            alert('Invalid page number');
-                        }
-                    });
-                    // Define loadPage function
-                    function loadPage(i) {
-                        return $.get('/?page=' + i);
-                    }
-
-                    // Export to Excel button click handler
-                    // $('#export-btn').click(async function () {
-                    //     var rows = hot.getData();  // get all data from the table
-                    //     var headers = hot.getColHeader();  // get all column headers
-
-                    //     rows.unshift(headers);  // add headers at the start of the rows array
-
-                    //     var ws = XLSX.utils.aoa_to_sheet(rows);
-                    //     var wb = XLSX.utils.book_new();
-                    //     XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-                    //     XLSX.writeFile(wb, "data.xlsx");
-                    // });
-
-                    // Export to Excel button click handler
-                    $('#export-btn').click(async function () {
-                        var rows = [];
-                        var headers = [];
-                        $('.column-header').each(function () {
-                            var header = $(this).text().trim();
-                            headers.push(header);  // Add every header, not just default ones
+                        // Editable cell focus event handler
+                        $('.editable-cell').focus(function () {
+                            $(this).data('initial-value', $(this).val());
                         });
-                        rows.push(headers);
 
-                        var pageInfoText = $(".pagination .page-info").text();
-                        var match = pageInfoText.match(/Page \d+\/(\d+)/);
-                        var totalPages = match ? parseInt(match[1]) : 1;
+                        // Editable cell blur event handler
+                        $('.editable-cell').blur(function () {
+                            var $cell = $(this);
+                            var row = $cell.data('row');
+                            var col = $cell.data('col');
+                            var value = $cell.val();
+                            var initialValue = $cell.data('initial-value');
 
-                        for (var i = 1; i <= totalPages; i++) { // Pages should start from 1
-                            var pageHtml = await loadPage(i);
-
-                            var $tempDom = $('<div>').append($.parseHTML(pageHtml));
-                            $tempDom.find('tbody tr').each(function () {
-                                var row = [];
-                                $(this).find('.editable-cell').each(function () {
-                                    if (!$(this).hasClass('hidden')) {
-                                        row.push($(this).val());
+                            if (value != initialValue) {
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '/update_cell',
+                                    data: JSON.stringify({
+                                        'row': row,
+                                        'col': col,
+                                        'value': value
+                                    }),
+                                    contentType: 'application/json;charset=UTF-8',
+                                    success: function (response) {
+                                        console.log(response);
+                                    },
+                                    error: function (error) {
+                                        console.log(error);
                                     }
                                 });
-                                rows.push(row);
-                            });
+                            }
+                        });
+
+                        // Page jump button click handler
+                        $('#go-btn').click(function () {
+                            var page = parseInt($('#page-input').val());
+                            var maxPage = parseInt($('.page-info').text().split('/')[1]);
+                            if (page >= 1 && page <= maxPage) {
+                                window.location.href = '/?page=' + page;
+                            } else {
+                                alert('Invalid page number');
+                            }
+                        });
+                        // Define loadPage function
+                        function loadPage(i) {
+                            return $.get('/?page=' + i);
                         }
 
-                        var ws = XLSX.utils.aoa_to_sheet(rows);
-                        var wb = XLSX.utils.book_new();
-                        XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-                        XLSX.writeFile(wb, "data.xlsx");
+                        // Export to Excel button click handler
+                        // $('#export-btn').click(async function () {
+                        //     var rows = hot.getData();  // get all data from the table
+                        //     var headers = hot.getColHeader();  // get all column headers
+
+                        //     rows.unshift(headers);  // add headers at the start of the rows array
+
+                        //     var ws = XLSX.utils.aoa_to_sheet(rows);
+                        //     var wb = XLSX.utils.book_new();
+                        //     XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+                        //     XLSX.writeFile(wb, "data.xlsx");
+                        // });
+
+                        // Export to Excel button click handler
+                        $('#export-btn').click(async function () {
+                            var rows = [];
+                            var headers = [];
+                            $('.column-header').each(function () {
+                                var header = $(this).text().trim();
+                                headers.push(header);  // Add every header, not just default ones
+                            });
+                            rows.push(headers);
+
+                            var pageInfoText = $(".pagination .page-info").text();
+                            var match = pageInfoText.match(/Page \d+\/(\d+)/);
+                            var totalPages = match ? parseInt(match[1]) : 1;
+
+                            for (var i = 1; i <= totalPages; i++) { // Pages should start from 1
+                                var pageHtml = await loadPage(i);
+
+                                var $tempDom = $('<div>').append($.parseHTML(pageHtml));
+                                $tempDom.find('tbody tr').each(function () {
+                                    var row = [];
+                                    $(this).find('.editable-cell').each(function () {
+                                        if (!$(this).hasClass('hidden')) {
+                                            row.push($(this).val());
+                                        }
+                                    });
+                                    rows.push(row);
+                                });
+                            }
+                            var ws = XLSX.utils.aoa_to_sheet(rows);
+                            var wb = XLSX.utils.book_new();
+
+                            XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
+
+                            // Generate a unique timestamp for the file name
+                            var timestamp = new Date().toISOString().replace(/[-:.]/g, '');
+
+                            // Add the timestamp to the file name
+                            var fileName = 'data_' + timestamp + '.xlsx';
+
+                            XLSX.writeFile(wb, fileName);
+                        });
+
+
+
                     });
-
-
-
-                });
-            </script>
+                </script>
 </body>
 
 </html>

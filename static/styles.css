@@ -2,7 +2,7 @@ body {
   background-color: #f2f2f2;
 }
 
-/* table {
+table {
   border-collapse: collapse;
   width: 100%;
 }
@@ -46,7 +46,7 @@ table tr:hover {
 
 .table_view tr:nth-child(odd) {
   background-color: #ffffff;
-} */
+}
 
 .pagination {
   margin-top: 10px;
@@ -107,6 +107,45 @@ nav {
   background-color: #ddd;
   color: black;
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.container .box {
+  flex: 1 0 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.container .box input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+}
+
+.container .box input[type="text"][name^="Not_"] {
+  background-color: #969696;
+  white-space: pre-wrap;
+
+}   
 
 
 
