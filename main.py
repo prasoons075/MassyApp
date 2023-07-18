@@ -15,7 +15,9 @@ from transformers import BertTokenizerFast, BertForSequenceClassification
 from transformers import pipeline
 
 # read the Excel file into a Pandas dataframe
-df_pandas = pd.read_excel("predict.xlsx", sheet_name='All Data')
+df_pandas = pd.read_excel("small excel.xlsx", sheet_name='All Data')
+df_pandas = df_pandas.fillna("")
+
 
 label_to_id = {
     'Roofing Issues': 0,
@@ -251,7 +253,7 @@ async def rules_engine_update():
                                 break
 
     # Save the updated DataFrame back to the Excel file
-    df_pandas.to_excel("predict.xlsx", sheet_name='All Data', index=False)
+    df_pandas.to_excel("small excel.xlsx", sheet_name='All Data', index=False)
 
     return RedirectResponse(url='/', status_code=303)
 
