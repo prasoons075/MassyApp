@@ -15,7 +15,7 @@ from transformers import BertTokenizerFast, BertForSequenceClassification
 from transformers import pipeline
 
 # read the Excel file into a Pandas dataframe
-df_pandas = pd.read_excel("small excel.xlsx", sheet_name='All Data')
+df_pandas = pd.read_excel("predict.xlsx", sheet_name='All Data')
 df_pandas = df_pandas.fillna("")
 
 
@@ -253,7 +253,7 @@ async def rules_engine_update():
                                 break
 
     # Save the updated DataFrame back to the Excel file
-    df_pandas.to_excel("small excel.xlsx", sheet_name='All Data', index=False)
+    df_pandas.to_excel("predict.xlsx", sheet_name='All Data', index=False)
 
     return RedirectResponse(url='/', status_code=303)
 
@@ -271,7 +271,8 @@ async def update_model_predictions():
     # Apply the classify_and_predict method to each row of the 'Description' column
     df_pandas[['corrected_text', 'predicted_category', 'predicted_score']] = df_pandas['Description'].apply(lambda x: pd.Series([classify_and_predict(x)['corrected_text']] + list(classify_and_predict(x)['predictions'][0]) if classify_and_predict(x)['predictions'] and classify_and_predict(x)['predictions'][0][1] >= threshold else ['', '', 0.0]))
 
-    df_pandas['num_unique_predicted_categories'] = df_pandas['predicted_category'].nunique()
+    df_pandas['num_predicted_categories'] = df_pandas['predicted_category'].apply(lambda x: len(x.split(',')))
+
     
     # Save the updated DataFrame back to the Excel file
     # df_pandas.to_excel("small excel.xlsx", sheet_name='All Data', index=False)
