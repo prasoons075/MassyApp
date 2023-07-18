@@ -10,8 +10,61 @@ from config import *
 import ast
 import re
 
+import torch
+from transformers import BertTokenizerFast, BertForSequenceClassification
+from transformers import pipeline
+
 # read the Excel file into a Pandas dataframe
-df_pandas = pd.read_excel("small excel.xlsx", sheet_name='All Data')
+df_pandas = pd.read_excel("super small excel.xlsx", sheet_name='All Data')
+
+label_to_id = {
+    'Roofing Issues': 0,
+    'Utility closet water leak': 1,
+    'Clog (shower / toilet/ sink)': 2,
+    'Shower, sink, toilet, or tub leak': 3,
+    'Toilet': 4,
+    'Smell': 5,
+    'Water in walls or ceiling': 6,
+    'water heater leaks': 7,
+    'Fixtures poor condition (loose/broken faucets, tubs, toilets)': 8,
+    'Hot water complaints': 9,
+    'Low water pressure /no water at all complaints': 10,
+    'Humidity/Mold': 11,
+    'Heating': 12,
+    'Air conditioning not working/broken': 13,
+    'Thermostat issues': 14,
+    'Smell.1': 15,
+    'Fan issues': 16,
+    'leaking device': 17,
+    'Inadequate system': 18,
+    'Electrical': 19,
+    'Fire': 20,
+    'Window issues': 21,
+    'Window Leak': 22,
+    'Window Condensation': 23,
+    'Washer/Dryer Issues': 24,
+    'Dishwasher Issues': 25
+}
+
+# Labels
+labels = list(label_to_id.keys())
+
+# Text correction pipeline
+fix_spelling_pipeline = pipeline("text2text-generation", model="oliverguhr/spelling-correction-multilingual-base")
+
+# Zero-shot classification pipeline
+pipe = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+
+# Ensure PyTorch is using CPU
+device = torch.device("cpu")
+
+# Load the model
+model = BertForSequenceClassification.from_pretrained('./model')
+model.to(device)  # Ensure model is using the correct device
+
+# Load the tokenizer
+tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
+
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -27,6 +80,69 @@ def create_table(df, page, page_size=30):
         'rows': rows,
         'num_of_pages': num_of_pages
     }
+
+def correct_text(text, max_length=2048):
+    # Check for empty or None text
+    if not text:
+        raise ValueError("Input text cannot be empty or None")
+
+    corrected_text = fix_spelling_pipeline("fix:" + text, max_length=max_length)[0]['generated_text']
+    return corrected_text
+
+def predict(text, threshold):
+    # Tokenize the text
+    encoding = tokenizer(text, truncation=True, padding=True, max_length=128, return_tensors='pt')
+
+    # Move tensors to correct device
+    encoding = {key: tensor.to(device) for key, tensor in encoding.items()}
+
+    # Perform inference
+    with torch.no_grad():
+        outputs = model(**encoding)
+
+    # Apply sigmoid to the output logits
+    probabilities = torch.sigmoid(outputs.logits)
+
+    # Convert the tensor to a numpy array
+    probabilities = probabilities.cpu().numpy()[0]
+
+    # Prepare a dictionary mapping labels to their probabilities
+    label_probabilities = {label: prob for label, prob in zip(labels, probabilities) if prob >= threshold}
+
+    # Sort the dictionary by value in descending order and return it as a list of tuples
+    label_probabilities_sorted = sorted(label_probabilities.items(), key=lambda item: item[1], reverse=True)
+
+    return label_probabilities_sorted
+
+def classify_and_predict(text, correct_text_enabled=True, threshold=0.5):
+    # Check for empty or None text
+    if not text:
+        raise ValueError("Input text cannot be empty or None")
+
+    # Correct the text if enabled
+    corrected_text = correct_text(text) if correct_text_enabled else text
+
+    # Classify the text using the zero-shot model
+    zero_shot_result = pipe(corrected_text, candidate_labels=['Home Infrastructure Problems','Others'])
+
+    # If the result is 'Home Infrastructure Problems', perform further classification
+    if zero_shot_result['labels'][0] == 'Home Infrastructure Problems':
+        predictions = predict(corrected_text, threshold)
+    else:
+        predictions = {}
+
+    # Prepare the output dictionary
+    output = {
+        "corrected_text": corrected_text,
+        "predictions": predictions
+    }
+
+    return output    
+
+# @app.on_event("startup")    
+# async def startup_event():
+#     return 
+
 
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request, page: int = 1):
@@ -135,7 +251,7 @@ async def rules_engine_update():
                                 break
 
     # Save the updated DataFrame back to the Excel file
-    df_pandas.to_excel("small excel.xlsx", sheet_name='All Data', index=False)
+    df_pandas.to_excel("super small excel.xlsx", sheet_name='All Data', index=False)
 
     return RedirectResponse(url='/', status_code=303)
 
@@ -144,7 +260,22 @@ async def rules_engine_update():
 
 @app.post("/predict")
 async def update_model_predictions():
-    print("model data updated")
+
+    # Add new columns to the DataFrame for the predicted category and score
+    df_pandas['predicted_category'] = ''
+    df_pandas['predicted_score'] = 0.0
+
+    # Define the threshold for the prediction
+    threshold = 0.5
+
+    # Apply the classify_and_predict method to each row of the 'Description' column
+    df_pandas[['predicted_category', 'predicted_score']] = df_pandas['Description'].apply(lambda x: pd.Series(classify_and_predict(x)['predictions'][0] if classify_and_predict(x)['predictions'] and classify_and_predict(x)['predictions'][0][1] >= threshold else ['', 0.0]))
+    
+    
+    # Save the updated DataFrame back to the Excel file
+    # df_pandas.to_excel("small excel.xlsx", sheet_name='All Data', index=False)
+
+    return RedirectResponse(url='/predict', status_code=303)
 
 if __name__ == "__main__":
     import uvicorn

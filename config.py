@@ -20,6 +20,7 @@ DEFAULT_COLUMNS = ['Sa', 'ProjectName', 'Year of Assessment (normally this year)
        'Unbalanced HVAC', 'Inadequate HVAC capacity', 'Electrical', 'Fire',
        'Window issues', 'Window Leak', 'Windows Fogged', 'Window Condensation',
        'Washer/Dryer Issues', 'Dishwasher Issues']
+       
 
 # DEFAULT_COLUMNS = ['Description','Roofing Issues',
 #        'Plumbing: Water Leak in Utility Closet',

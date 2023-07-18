@@ -29,7 +29,7 @@
         </div>
     </nav>
     <!-- <h1>Editable Excel Sheet with Pagination</h1> -->
-    <div id="table-container"></div>
+    <!-- <div id="table-container"></div>
 
     <script>
         var container = document.getElementById('table-container');
@@ -69,8 +69,8 @@
         hot.updateSettings({
             height: tableHeight
         });
-    </script>
-    <!--<table>
+    </script> -->
+    <table>
             <thead>
                 <tr>
                     {% for header in page_data['headers'] %}
@@ -94,12 +94,12 @@
                 {% endfor %}
             </tbody>
         </table>
-    </div> -->
+    </div>
 
     <div class="pagination" style="display: flex; justify-content: space-between;">
         <div class="page-info" style="margin-right: 10px;"> |Page {{page}}/{{page_data['num_of_pages']}} |
-            <a class="prev-btn" href="/?page={{page-1}}">&laquo; Prev</a>
-            <a class="next-btn" href="/?page={{page+1}}">Next &raquo;</a>
+            <a class="prev-btn" href="/predict/?page={{page-1}}">&laquo; Prev</a>
+            <a class="next-btn" href="/predict/?page={{page+1}}">Next &raquo;</a>
         </div>
         <div class="page-jump">
             Go to page: <input type="text" id="page-input" value="{{page}}">
@@ -124,7 +124,7 @@
     <form method="POST">
         <div class="container">
             <div class="box">
-                <input type="submit" value="Run Rules Engine">
+                <input type="submit" value="Run Model Predictions">
             </div>
             <script>
 
@@ -229,14 +229,14 @@
                         var page = parseInt($('#page-input').val());
                         var maxPage = parseInt($('.page-info').text().split('/')[1]);
                         if (page >= 1 && page <= maxPage) {
-                            window.location.href = '/?page=' + page;
+                            window.location.href = '/predict/?page=' + page;
                         } else {
                             alert('Invalid page number');
                         }
                     });
                     // Define loadPage function
                     function loadPage(i) {
-                        return $.get('/?page=' + i);
+                        return $.get('/predict/?page=' + i);
                     }
 
                     // Export to Excel button click handler
